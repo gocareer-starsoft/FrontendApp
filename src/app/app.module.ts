@@ -17,6 +17,7 @@ import { LandingComponent } from './public/pages/landing/landing.component';
 import { NavbarComponent } from './gocareer/components/navbar/navbar.component';
 import { HomeComponent } from './gocareer/pages/home/home.component';
 import { ProfileComponent } from './gocareer/pages/profile/profile.component';
+import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProfileComponent } from './gocareer/pages/profile/profile.component';
     LandingComponent,
     NavbarComponent,
     HomeComponent,
-    ProfileComponent
+    ProfileComponent,
+    NotFoundComponent
   ],
   imports: [
     BrowserModule,
