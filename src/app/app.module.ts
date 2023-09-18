@@ -11,10 +11,22 @@ import {MatCardModule} from "@angular/material/card";
 import {MatSidenavModule} from "@angular/material/sidenav";
 import {MatFormFieldModule} from "@angular/material/form-field";
 import {HttpClientModule} from "@angular/common/http";
+import { HeaderComponent } from './public/components/header/header.component';
+import { FooterComponent } from './public/components/footer/footer.component';
+import { LandingComponent } from './public/pages/landing/landing.component';
+import { NavbarComponent } from './gocareer/components/navbar/navbar.component';
+import { HomeComponent } from './gocareer/pages/home/home.component';
+import { ProfileComponent } from './gocareer/pages/profile/profile.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    FooterComponent,
+    LandingComponent,
+    NavbarComponent,
+    HomeComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
