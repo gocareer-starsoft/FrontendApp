@@ -28,6 +28,7 @@
 }
 .header__navbar {
   display: flex;
+  align-items: center;
   gap: 4rem;
 }
 .header__navbar a {
@@ -40,4 +41,7 @@
 }
 .header__navbar a.active {
   font-weight: 600;
+}
+.btn__log-in {
+  background-color: #0288D1 !important;
 }
