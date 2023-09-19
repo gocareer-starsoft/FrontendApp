@@ -16,6 +16,7 @@ import { ProfileComponent } from './gocareer/pages/profile/profile.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 import { NewuserComponent } from './register/components/newuser/newuser.component';
 import { LoginComponent } from './register/components/login/login.component';
+import { ForgotpasswordComponent } from './register/components/forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LoginComponent } from './register/components/login/login.component';
     ProfileComponent,
     NotFoundComponent,
     NewuserComponent,
-    LoginComponent
+    LoginComponent,
+    ForgotpasswordComponent
   ],
   imports: [
     BrowserModule,
