@@ -1,0 +1,37 @@
+<div class="userlogin">
+<mat-card>
+  <mat-card-content>
+    <div class="registerfields">
+      <h3>Ingresar nombre</h3>
+      <mat-form-field>
+        <input matInput>
+      </mat-form-field>
+    </div>
+    <div class="registerfields">
+      <h3>Ingresar apellido</h3>
+      <mat-form-field>
+        <input matInput>
+      </mat-form-field>
+    </div>
+    <div class="registerfields">
+      <h3>Tu e-mail</h3>
+      <mat-form-field>
+        <input matInput>
+      </mat-form-field>
+    </div>
+    <div class="registerfields">
+      <h3>Crear contraseña</h3>
+      <mat-form-field>
+        <input matInput [type]="hide ? 'password' : 'text'">
+      </mat-form-field>
+    </div>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="usertype">
+      <button class="btuser">Para estudiantes</button>
+      <button class="btuser">Para expertos</button>
+    </div>
+  </mat-card-footer>
+</mat-card>
+</div>
+
