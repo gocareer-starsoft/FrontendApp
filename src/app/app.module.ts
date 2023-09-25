@@ -14,9 +14,9 @@ import { NavbarComponent } from './gocareer/components/navbar/navbar.component';
 import { HomeComponent } from './gocareer/pages/home/home.component';
 import { ProfileComponent } from './gocareer/pages/profile/profile.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
-import { NewuserComponent } from './register/components/newuser/newuser.component';
-import { LoginComponent } from './register/components/login/login.component';
-import { ForgotpasswordComponent } from './register/components/forgotpassword/forgotpassword.component';
+import { NewuserComponent } from './public/components/newuser/newuser.component';
+import { LoginComponent } from './public/components/login/login.component';
+import { ForgotpasswordComponent } from './public/components/forgotpassword/forgotpassword.component';
 
 @NgModule({
   declarations: [
