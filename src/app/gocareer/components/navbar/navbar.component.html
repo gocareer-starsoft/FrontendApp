@@ -4,10 +4,12 @@
       <i class="fa-solid fa-bars-staggered fa-2xl"></i>
     </button>
     <mat-menu class="menu" #menu="matMenu">
-      <button mat-menu-item>Notificaciones</button>
-      <button mat-menu-item>Conocer Especialistas</button>
-      <button mat-menu-item>Realizar Test</button>
-      <button mat-menu-item>Carreras</button>
+      <button mat-menu-item (click)="redirectToNotifications()">Notificaciones</button>
+      <button mat-menu-item (click)="redirectToSpecialists()">Conocer Especialistas</button>
+      <button mat-menu-item (click)="redirectToTest()">Realizar Test</button>
+      <button mat-menu-item (click)="redirectToCareer()">Carreras</button>
+      <br>
+      <button mat-menu-item (click)="signOut()">Cerrar sesion</button>
     </mat-menu>
 
   </div>
@@ -17,7 +19,8 @@
   </div>
 
   <div class="btn-profile">
-    <button class="profile-icon" aria-label="Example icon-button with share icon">
+    <button class="profile-icon" aria-label="Example icon-button with share icon"
+            (click)="redirectToProfile()">
       <i class="fa-solid fa-circle-user fa-2xl"></i>
     </button>
   </div>
