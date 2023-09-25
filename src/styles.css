@@ -2,6 +2,9 @@
 :root {
   /* Colores */
   --negro: #393939;
+  --primary-color: rgba(2, 136, 209, 1);
+  --secondary-color: rgba(19, 94, 136, 0.3);
+  --bg-color: #EDEDED;
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
@@ -10,7 +13,7 @@
 /* (Opcional) Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-    --negro: #ececec;
+  //--negro: #ececec;
   }
 }
 /* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
@@ -90,6 +93,7 @@ form, input, textarea, select, button, label {
   display: block;
   /* (Opcional) */
   appearance: none;
+  border: 0 !important;
 }
 
 /* Reseteamos las tablas */
@@ -114,10 +118,12 @@ html {
 
 /* Configuramos la tipografía para toda la web */
 body {
+  width: 100%;
   min-height: 100vh;
   font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--negro);
+  background-color: var(--bg-color);
 }
 
 section {

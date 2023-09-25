@@ -1,0 +1,22 @@
+.navbar {
+  background-color: var(--primary-color);
+  box-shadow: 0 10px var(--secondary-color);
+  height: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 max(8%, 1rem);
+
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    .img-logo {
+      width: 3rem;
+    }
+    .text-logo {
+      font-size: 2em;
+      font-weight: bold;
+    }
+  }
+}
