@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,6 +18,8 @@ import { NotFoundComponent } from './public/pages/not-found/not-found.component'
 import { NewuserComponent } from './public/components/newuser/newuser.component';
 import { LoginComponent } from './public/components/login/login.component';
 import { ForgotpasswordComponent } from './public/components/forgotpassword/forgotpassword.component';
+import { RectangularCardComponent } from './gocareer/components/rectangular-card/rectangular-card.component';
+import { SearchComponent } from './gocareer/components/search/search.component';
 
 @NgModule({
   declarations: [
@@ -30,14 +33,18 @@ import { ForgotpasswordComponent } from './public/components/forgotpassword/forg
     NotFoundComponent,
     NewuserComponent,
     LoginComponent,
-    ForgotpasswordComponent
+    ForgotpasswordComponent,
+    RectangularCardComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    MaterialModule
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
