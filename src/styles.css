@@ -2,9 +2,13 @@
 :root {
   /* Colores */
   --negro: #393939;
-  --primary-color: rgba(2, 136, 209, 1);
+  --font-color-bg-light: black;
+  --font-color-bg-dark: white;
+  --primary-color: rgba(19, 94, 136, 0.8);
   --secondary-color: rgba(19, 94, 136, 0.3);
-  --bg-color: #EDEDED;
+  --bg-body-color: #EDEDED;
+  --bg-div-color: white;
+
   /* Tipografía */
   --tipo-principal: Helvetica, Arial, sans-serif;
   --tipo-secundaria: Verdana;
@@ -66,7 +70,7 @@ li {
 }
 
 /* Desactivamos estilos por defecto de las principales etiquetas de texto */
-h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, b, u, em {
+h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, u, em {
   font-size: inherit;
   font-weight: inherit;
   font-style: inherit;
@@ -123,7 +127,7 @@ body {
   font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--negro);
-  background-color: var(--bg-color);
+  background-color: var(--bg-body-color);
 }
 
 section {
@@ -136,6 +140,18 @@ section {
   height: 100%;
   margin: 0 auto;
   padding: 0 3%;
+}
+.layout {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.menu {
+    background: var(--bg-div-color) !important;
+    border-radius: 20px;
+}
+.bg-light {
+    color: var(--font-color-bg-light) !important;
 }
 @media (max-width: 1000px) and (min-width: 0px) {
   .container {
