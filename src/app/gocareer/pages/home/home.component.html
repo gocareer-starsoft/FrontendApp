@@ -1,1 +1,13 @@
-<p>home works!</p>
+<app-navbar></app-navbar>
+<section>
+  <div class="container">
+    <app-search></app-search>
+    <div class="cards">
+      <app-rectangular-card
+        *ngFor="let card of cardData"
+        [imageUrl]="card.imageUrl"
+        [textInfo]="card.textInfo">
+      </app-rectangular-card>
+    </div>
+  </div>
+</section>

@@ -4,12 +4,12 @@
       <i class="fa-solid fa-bars-staggered fa-2xl"></i>
     </button>
     <mat-menu class="menu" #menu="matMenu">
-      <button mat-menu-item (click)="redirectToNotifications()">Notificaciones</button>
-      <button mat-menu-item (click)="redirectToSpecialists()">Conocer Especialistas</button>
-      <button mat-menu-item (click)="redirectToTest()">Realizar Test</button>
-      <button mat-menu-item (click)="redirectToCareer()">Carreras</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/notifications']">Notificaciones</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/specialists']">Conocer Especialistas</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/test']">Realizar Test</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/career']">Carreras</button>
       <br>
-      <button mat-menu-item (click)="signOut()">Cerrar sesion</button>
+      <button class="bg-light" mat-menu-item (click)="signOut()">Cerrar sesión</button>
     </mat-menu>
 
   </div>
@@ -20,7 +20,7 @@
 
   <div class="btn-profile">
     <button class="profile-icon" aria-label="Example icon-button with share icon"
-            (click)="redirectToProfile()">
+            [routerLink]="['/profile']">
       <i class="fa-solid fa-circle-user fa-2xl"></i>
     </button>
   </div>

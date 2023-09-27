@@ -4,12 +4,16 @@ import { LandingComponent} from "./public/pages/landing/landing.component";
 import { NotFoundComponent} from "./public/pages/not-found/not-found.component";
 import { LoginComponent} from "./public/components/login/login.component";
 import { ForgotpasswordComponent} from "./public/components/forgotpassword/forgotpassword.component";
+import { HomeComponent } from "./gocareer/pages/home/home.component";
+import { ProfileComponent } from "./gocareer/pages/profile/profile.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login', component: LoginComponent },
   { path: 'checkpoint', component: ForgotpasswordComponent },
-  { path: '**', component: NotFoundComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'profile', component: ProfileComponent },
+  { path: '**', component: NotFoundComponent }
 ];
 
 @NgModule({
