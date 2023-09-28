@@ -9,6 +9,7 @@ import { ProfileComponent } from "./gocareer/pages/profile/profile.component";
 import {
   PrincipalPageSpecialistComponent
 } from "./specialist/pages/principal-page-specialist/principal-page-specialist.component";
+import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'specilist', component: PrincipalPageSpecialistComponent },
+  { path: 'users-specialist', component:UsersOfSpecialistComponent },
   { path: '**', component: NotFoundComponent }
 ];
 

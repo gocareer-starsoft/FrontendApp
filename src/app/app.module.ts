@@ -21,6 +21,8 @@ import { ForgotpasswordComponent } from './public/components/forgotpassword/forg
 import { RectangularCardComponent } from './gocareer/components/rectangular-card/rectangular-card.component';
 import { SearchComponent } from './gocareer/components/search/search.component';
 import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-page-specialist/principal-page-specialist.component';
+import { UsersOfSpecialistComponent } from './specialist/pages/users-of-specialist/users-of-specialist.component';
+import { CardUserComponent } from './specialist/components/card-user/card-user.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +40,8 @@ import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-p
     RectangularCardComponent,
     SearchComponent,
     PrincipalPageSpecialistComponent,
+    UsersOfSpecialistComponent,
+    CardUserComponent,
   ],
   imports: [
     BrowserModule,
