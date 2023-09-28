@@ -17,7 +17,7 @@ const routes: Routes = [
   { path: 'checkpoint', component: ForgotpasswordComponent },
   { path: 'home', component: HomeComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'specilist', component: PrincipalPageSpecialistComponent },
+  { path: 'specialist', component: PrincipalPageSpecialistComponent },
   { path: 'users-specialist', component:UsersOfSpecialistComponent },
   { path: '**', component: NotFoundComponent }
 ];
