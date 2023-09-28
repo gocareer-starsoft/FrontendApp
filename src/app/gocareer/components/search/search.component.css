@@ -1,0 +1,23 @@
+.form {
+    max-width: min(40rem, 100%);
+    margin: 0 auto 7rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .fa-magnifying-glass {
+        padding: 1rem;
+        background-color: var(--primary-color);
+        font-size: 1.5em;
+        color: var(--font-color-bg-dark);
+    }
+}
+.input-search {
+    width: 100%;
+    padding: 1.1rem;
+    background-color: var(--primary-color);
+    color: var(--font-color-bg-dark);
+
+    &::placeholder {
+        color: var(--font-color-bg-dark);
+    }
+}
