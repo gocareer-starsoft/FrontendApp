@@ -7,8 +7,10 @@ mat-card{
   width: 50.625rem;
   height: 40rem;
   border-radius: 3.563rem;
-  align-items: center;
+  display: grid;
+  place-items: center;
 }
+
 mat-form-field{
   background-color: white;
   width: 28.75rem;
@@ -30,7 +32,6 @@ mat-form-field{
   font-family: Roboto;
   font-size: 1.563rem;
   font-weight: bold;
-  align-items: center;
   display: grid;
   place-content: center;
 }
@@ -46,10 +47,15 @@ mat-form-field{
 .btenter{
   width: 22.188rem;
   height: 4.375rem;
+  margin: 0 auto;
   background-color: var(--primary-color);
   color: white;
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
   border-radius: 1.563rem;
+}
+.register {
+  text-align: center;
+  font-size: 0.8em;
 }
