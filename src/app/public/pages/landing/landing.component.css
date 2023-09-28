@@ -1,3 +1,10 @@
+.title {
+  font-size: 3em;
+  padding-bottom: 5rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+}
 .hero {
   min-height: 100vh;
   background-image: linear-gradient(#f6f6f6, #bad2ee);
@@ -105,8 +112,34 @@
   font-size: 1.2em;
 }
 
-.contact {
+.testi {
   background-image: linear-gradient(#f6f6f6, #bad2ee);
+}
+.testi-content {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+.testi-content .card {
+  padding: 1rem;
+  max-width: 40rem;
+  background: #fff;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  .comment {
+    font-size: 1.2em;
+    margin-bottom: 1rem;
+  }
+  .user {
+    font-size: 1em;
+    color: #777;
+  }
+}
+
+.contact {
+  background-image: linear-gradient(#bad2ee, #f6f6f6);
 }
 .contact__container {
   display: flex;
