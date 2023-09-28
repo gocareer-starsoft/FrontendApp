@@ -20,7 +20,7 @@ import { LoginComponent } from './public/components/login/login.component';
 import { ForgotpasswordComponent } from './public/components/forgotpassword/forgotpassword.component';
 import { RectangularCardComponent } from './gocareer/components/rectangular-card/rectangular-card.component';
 import { SearchComponent } from './gocareer/components/search/search.component';
-import { PrincipalComponent } from './specialist/pages/principal/principal.component';
+import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-page-specialist/principal-page-specialist.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +37,7 @@ import { PrincipalComponent } from './specialist/pages/principal/principal.compo
     ForgotpasswordComponent,
     RectangularCardComponent,
     SearchComponent,
-    PrincipalComponent
+    PrincipalPageSpecialistComponent,
   ],
   imports: [
     BrowserModule,
