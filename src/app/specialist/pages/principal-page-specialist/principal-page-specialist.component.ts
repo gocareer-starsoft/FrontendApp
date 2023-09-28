@@ -6,17 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./principal-page-specialist.component.css']
 })
 export class PrincipalPageSpecialistComponent {
-  card1 = {
-    imageUrl: "https://pic.onlinewebfonts.com/thumbnails/icons_503713.svg",
-    text: 'Tienes una nueva prueba para calificar',
-    title: "Hola",
-    textbutton: "Revisar Prueba"
-  }
-
-  card2 = {
-    imageUrl: "https://pic.onlinewebfonts.com/thumbnails/icons_319579.svg",
-    text: 'Conoce a los nuevos alumnos que se registraron contigo'
-  }
 
   cards = [
     {
