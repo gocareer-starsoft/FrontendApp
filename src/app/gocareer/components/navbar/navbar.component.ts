@@ -9,6 +9,6 @@ export class NavbarComponent  {
   constructor(private router: Router) { }
 
   signOut() {
-    this.router.navigate(['/notifications']); // Redirige al componente de inicio de sesión
+    this.router.navigate(['']); // Redirige al componente de inicio de sesión
   }
 }

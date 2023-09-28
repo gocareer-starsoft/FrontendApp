@@ -5,9 +5,14 @@
 mat-card{
   background-color: white;
   width: 50.625rem;
-  height: 40rem;
   border-radius: 3.563rem;
-  align-items: center;
+  display: grid;
+  place-items: center;
+  padding: 2rem;
+}
+mat-card-content{
+  display: flex;
+  flex-direction: column;
 }
 mat-form-field{
   background-color: white;
@@ -15,22 +20,20 @@ mat-form-field{
   height: 4.063rem;
 }
 .registerfields{
-  display: flex;
-  gap: 2.5rem;
-  margin-top: 2.688rem;
 }
-.registerfields h3{
+mat-card-content h3{
   font-family: inherit;
   font-size: inherit;
   font-weight: bold;
-  color: #03A9F4;
+  color: var(--primary-color);
 }
 .userlogin{
-  background-color: #0288D1;
+  background-color: var(--primary-color);
   font-family: Roboto;
   font-size: 1.563rem;
   font-weight: bold;
-  align-items: center;
+  display: grid;
+  place-content: center;
 }
 .usertype{
   align-items: center;
@@ -41,10 +44,14 @@ mat-form-field{
 .btuser{
   width: 16.875rem;
   height: 4.375rem;
-  background-color: #03A9F4;
+  background-color: var(--primary-color);
   color: white;
   font-family: inherit;
-  font-size: inherit;
   font-weight: inherit;
   border-radius: 1.563rem;
+}
+.register {
+  text-align: center;
+  font-size: 0.8em;
+  padding-top: 2rem;
 }

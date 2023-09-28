@@ -153,6 +153,9 @@ section {
 .bg-light {
     color: var(--font-color-bg-light) !important;
 }
+.view {
+  min-height: 100vh;
+}
 @media (max-width: 1000px) and (min-width: 0px) {
   .container {
     font-size: 80%;
