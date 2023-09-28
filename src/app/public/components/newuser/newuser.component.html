@@ -1,0 +1,33 @@
+<div class="userlogin">
+<mat-card>
+  <mat-card-content>
+    <div>
+      <h3>Ingresar nombre</h3>
+      <h3>Ingresar apellido</h3>
+      <h3>Tu e-mail</h3>
+      <h3>Crear contraseña</h3>
+    </div>
+    <form (submit)="onSubmit()" #newForm='ngForm' class="registerfields">
+      <mat-form-field>
+        <input matInput placeholder="Nombre" name="name" required [(ngModel)]="user.name">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Apellido" name="lastname" required [(ngModel)]="user.lastname">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="E-mail" name="email" required [(ngModel)]="user.email">
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Password" name="password" required [(ngModel)]="user.password" [type]="hide ? 'password' : 'text'">
+      </mat-form-field>
+    </form>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="usertype">
+      <button class="btuser" [routerLink]="">Para estudiantes</button>
+      <button class="btuser" [routerLink]="">Para expertos</button>
+    </div>
+  </mat-card-footer>
+</mat-card>
+</div>
+
