@@ -23,6 +23,7 @@ import { SearchComponent } from './gocareer/components/search/search.component';
 import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-page-specialist/principal-page-specialist.component';
 import { UsersOfSpecialistComponent } from './specialist/pages/users-of-specialist/users-of-specialist.component';
 import { CardUserComponent } from './specialist/components/card-user/card-user.component';
+import { CardSpecialistComponent } from './specialist/components/card-specialist/card-specialist.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,8 @@ import { CardUserComponent } from './specialist/components/card-user/card-user.c
     PrincipalPageSpecialistComponent,
     UsersOfSpecialistComponent,
     CardUserComponent,
+    CardSpecialistComponent,
+
   ],
   imports: [
     BrowserModule,

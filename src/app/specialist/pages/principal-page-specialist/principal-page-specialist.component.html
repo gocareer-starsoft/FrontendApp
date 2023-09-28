@@ -6,15 +6,13 @@
 
 
 <div class="cards">
-  <app-rectangular-card
-    [imageUrl]="card1.imageUrl"
-    [textInfo]="card1.text">
-    ></app-rectangular-card>
+  <app-card-specialist *ngFor="let card of cards"
+                       [image]="card.imageUrl"
+                       [textbutton]=card.textbutton
+                       [pathforbutton]="card.pathbutton"
+                       [text]=card.text>
 
-  <app-rectangular-card
-    [imageUrl]="card2.imageUrl"
-    [textInfo]="card2.text">
-    ></app-rectangular-card>
+  </app-card-specialist>
 
 </div>
 
