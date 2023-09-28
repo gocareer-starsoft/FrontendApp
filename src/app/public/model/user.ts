@@ -14,7 +14,7 @@ export class User {
     this.email='';
     this.password='';
     this.phone=0;
-    this.description='';
+    this.description='Add description';
     this.specialist=false;
   }
 }
