@@ -1,8 +1,14 @@
 .card{
-  max-width: 40%;
   margin: 2rem;
 }
 
+.avatar{
+  max-width: 40%;
+}
+
+img{
+  padding: 1rem;
+}
 
 .flex{
   display: flex;

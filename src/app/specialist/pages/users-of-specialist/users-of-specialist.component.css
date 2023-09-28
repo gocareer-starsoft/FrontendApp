@@ -1,3 +1,9 @@
 .search{
   margin-top: 2rem;
 }
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crear 3 columnas de igual ancho */
+  max-width: 100%;
+}
