@@ -1,1 +1,27 @@
-<p>navbar works!</p>
+<mat-toolbar class="navbar">
+  <div class="btn-menu">
+    <button class="btn" [matMenuTriggerFor]="menu">
+      <i class="fa-solid fa-bars-staggered fa-2xl"></i>
+    </button>
+    <mat-menu class="menu" #menu="matMenu">
+      <button class="bg-light" mat-menu-item [routerLink]="['/notifications']">Notificaciones</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/specialists']">Conocer Especialistas</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/test']">Realizar Test</button>
+      <button class="bg-light" mat-menu-item [routerLink]="['/career']">Carreras</button>
+      <br>
+      <button class="bg-light" mat-menu-item (click)="signOut()">Cerrar sesión</button>
+    </mat-menu>
+
+  </div>
+  <div class="logo">
+    <img class="img-logo" src="assets/images/logo-white.png" alt="Logo GoCareer">
+    <span class="text-logo">GoCareer</span>
+  </div>
+
+  <div class="btn-profile">
+    <button class="profile-icon" aria-label="Example icon-button with share icon"
+            [routerLink]="['/profile']">
+      <i class="fa-solid fa-circle-user fa-2xl"></i>
+    </button>
+  </div>
+</mat-toolbar>
