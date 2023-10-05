@@ -1,0 +1,7 @@
+.name-input {
+  display: flex;
+  gap: 1rem;
+}
+.example-full-width {
+  width: 100%;
+}
