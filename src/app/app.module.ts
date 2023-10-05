@@ -16,7 +16,7 @@ import { HomeComponent } from './gocareer/pages/home/home.component';
 import { ProfileComponent } from './gocareer/pages/profile/profile.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 import { NewuserComponent } from './public/components/newuser/newuser.component';
-import { LoginComponent } from './public/components/login/login.component';
+import { LoginComponent } from './public/pages/login/login.component';
 import { ForgotpasswordComponent } from './public/components/forgotpassword/forgotpassword.component';
 import { RectangularCardComponent } from './gocareer/components/rectangular-card/rectangular-card.component';
 import { SearchComponent } from './gocareer/components/search/search.component';
@@ -24,6 +24,8 @@ import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-p
 import { UsersOfSpecialistComponent } from './specialist/pages/users-of-specialist/users-of-specialist.component';
 import { CardUserComponent } from './specialist/components/card-user/card-user.component';
 import { CardSpecialistComponent } from './specialist/components/card-specialist/card-specialist.component';
+import { EmailInputComponent } from './public/components/email-input/email-input.component';
+import { PasswordInputComponent } from './public/components/password-input/password-input.component';
 
 @NgModule({
   declarations: [
@@ -44,7 +46,8 @@ import { CardSpecialistComponent } from './specialist/components/card-specialist
     UsersOfSpecialistComponent,
     CardUserComponent,
     CardSpecialistComponent,
-
+    EmailInputComponent,
+    PasswordInputComponent
   ],
   imports: [
     BrowserModule,

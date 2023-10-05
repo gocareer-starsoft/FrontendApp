@@ -1,0 +1,21 @@
+<div class="login view">
+  <div class="container-login">
+    <mat-card>
+      <mat-card-header>
+        <h1>Bienvenidos</h1>
+        <p>Por favor inicie sesión para continuar</p>
+      </mat-card-header>
+      <mat-card-content>
+        <app-email-input/>
+        <app-password-input/>
+        <a class="checkpoint-link" routerLink="/checkpoint">¿Olvidó su contraseña?</a>
+        <button class="btn" routerLink="/home">Ingresa ahora</button>
+      </mat-card-content>
+      <mat-card-footer>
+        <p >¿Aun no tienes una cuenta?
+          <a class="register-link" routerLink="/register">Registrate!!</a>
+        </p>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

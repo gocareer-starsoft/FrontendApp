@@ -1,3 +1,5 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
 /* Definimos las Custom properties */
 :root {
   /* Colores */
@@ -156,9 +158,17 @@ section {
 .view {
   min-height: 100vh;
 }
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--font-color-bg-dark);
+  border-radius: 30px;
+}
 @media (max-width: 1000px) and (min-width: 0px) {
+  .view {
+    font-size: 85%;
+  }
   .container {
-    font-size: 80%;
     text-align: center;
   }
 }
@@ -167,3 +177,6 @@ section {
     font-size: 60%;
   }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
