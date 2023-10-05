@@ -1,5 +1,5 @@
 <div class="login view">
-  <div class="container-login">
+  <div class="container-login" [ngClass]="{'hide': isHidden}">
     <mat-card>
       <mat-card-header>
         <h1>Bienvenidos</h1>
@@ -8,12 +8,12 @@
       <mat-card-content>
         <app-email-input/>
         <app-password-input/>
-        <a class="checkpoint-link" routerLink="/checkpoint">¿Olvidó su contraseña?</a>
-        <button class="btn" routerLink="/home">Ingresa ahora</button>
+        <a class="checkpoint-link" routerLink="/forgot-password">¿Olvidó su contraseña?</a>
+        <button class="btn" routerLink="/st/home">Ingresa ahora</button>
       </mat-card-content>
       <mat-card-footer>
-        <p >¿Aun no tienes una cuenta?
-          <a class="register-link" routerLink="/register">Registrate!!</a>
+        <p>¿Aun no tienes una cuenta?
+          <a class="register-link" (click)="onSignup()">Únete!!</a>
         </p>
       </mat-card-footer>
     </mat-card>
