@@ -1,34 +1,39 @@
-<app-navbar></app-navbar>
-<div class="container">
-    <div class="profile">
-        <img [src]="user.avatarUrl" alt="User Avatar">
-        <div class="data" *ngIf="userData">
-            <h1>{{ user.name }}</h1>
-            <ul class="list">
-                <li><b>Nombre: </b>{{ user.name }}</li>
-                <li><b>Apellido: </b>{{ user.email }}</li>
-                <li><b>Email: </b>{{ user.email }}</li>
-                <li><b>Phone: </b>{{ user.phone }}</li>
-                <li><b>Bio: </b>{{ user.bio }}</li>
-            </ul>
+<mat-card class="profile">
+  <mat-card-header>
+    <img [src]="user.avatarUrl" alt="User Avatar">
+  </mat-card-header>
+  <mat-card-content>
+    <mat-card-title>{{ user.name }}</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    <div class="data" *ngIf="userData">
+      <ul class="list">
+        <li><b>Nombre: </b>{{ user.name }}</li>
+        <li><b>Apellido: </b>{{ user.email }}</li>
+        <li><b>Email: </b>{{ user.email }}</li>
+        <li><b>Phone: </b>{{ user.phone }}</li>
+        <li><b>Bio: </b>{{ user.bio }}</li>
+      </ul>
 
-            <button (click)="editData()">Editar Perfil</button>
-        </div>
-
-        <div class="end" *ngIf="editMode">
-            <label for="name">Nombre:</label>
-            <input id="name" [(ngModel)]="user.name" placeholder="Nombre">
-
-            <label for="email">Email:</label>
-            <input id="email" [(ngModel)]="user.email" placeholder="Email">
-
-            <label for="phone">Teléfono:</label>
-            <input id="phone" [(ngModel)]="user.phone" placeholder="Teléfono">
-
-            <label for="bio">Bio:</label>
-            <textarea id="bio" [(ngModel)]="user.bio" placeholder="Biografía"></textarea>
-
-            <button (click)="saveProfile()">Guardar</button>
-        </div>
     </div>
-</div>
+
+    <div class="end" *ngIf="editMode">
+      <label for="name">Nombre:</label>
+      <input id="name" [(ngModel)]="user.name" placeholder="Nombre">
+
+      <label for="email">Email:</label>
+      <input id="email" [(ngModel)]="user.email" placeholder="Email">
+
+      <label for="phone">Teléfono:</label>
+      <input id="phone" [(ngModel)]="user.phone" placeholder="Teléfono">
+
+      <label for="bio">Bio:</label>
+      <textarea id="bio" [(ngModel)]="user.bio" placeholder="Biografía"></textarea>
+    </div>
+  </mat-card-content>
+  <mat-card-actions>
+    <button *ngIf="userData" mat-button
+            (click)="editData()">Editar Perfil</button>
+    <button *ngIf="editMode" mat-button
+            (click)="saveProfile()">Guardar</button>
+  </mat-card-actions>
+</mat-card>

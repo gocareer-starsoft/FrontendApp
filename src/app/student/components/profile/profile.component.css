@@ -1,15 +1,17 @@
 .profile {
-    width: 30rem;
-    margin: 7rem auto;
+    width: 25rem;
+  max-width: 400px;
     padding: 2rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #f0f0f0;
+    background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
+mat-card-header, mat-card-content, mat-card-actions {
+  padding: 0;
+}
 .profile img {
     min-width: 200px;
     max-width: 200px;
@@ -62,7 +64,6 @@ ul {
     line-height: 1.2em;
 }
 
-/* Estilo para los campos de edición */
 div[ngIf="editMode"] {
     min-width: 50rem;
     background-color: #fff;

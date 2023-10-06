@@ -1,0 +1,21 @@
+<app-navbar-st></app-navbar-st>
+<section class="home-st">
+  <div class="container">
+    <app-profile/>
+    <div class="content">
+      <h1 class="title">
+        <button class="icon-home" mat-fab
+                aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
+        Home
+      </h1>
+      <app-rectangular-card
+        *ngFor="let card of cardData"
+        [imageUrl]="card.imageUrl"
+        [textInfo]="card.textInfo">
+      </app-rectangular-card>
+    </div>
+  </div>
+</section>
+
