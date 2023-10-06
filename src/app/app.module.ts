@@ -11,8 +11,6 @@ import { HttpClientModule } from "@angular/common/http";
 import { HeaderComponent } from './public/components/header/header.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { LandingComponent } from './public/pages/landing/landing.component';
-import { NavbarComponent } from './student/components/navbar/navbar.component';
-import { HomeComponent } from './student/pages/home/home.component';
 import { ProfileComponent } from './student/components/profile/profile.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 import { LoginComponent } from './public/pages/login/login.component';
@@ -27,6 +25,12 @@ import { PasswordInputComponent } from './public/components/password-input/passw
 import { SignupComponent } from './public/pages/signup/signup.component';
 import { NameInputComponent } from './public/components/name-input/name-input.component';
 import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-password.component';
+import { NavbarStComponent } from './student/components/navbar-st/navbar-st.component';
+import { HomeStComponent } from './student/pages/home-st/home-st.component';
+import { SettingsMenuComponent } from './public/components/settings-menu/settings-menu.component';
+import { NavMenuComponent } from './public/components/nav-menu/nav-menu.component';
+import { NavbarSpComponent } from './specialist/components/navbar-sp/navbar-sp.component';
+import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 
 @NgModule({
   declarations: [
@@ -34,8 +38,6 @@ import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-p
     HeaderComponent,
     FooterComponent,
     LandingComponent,
-    NavbarComponent,
-    HomeComponent,
     ProfileComponent,
     NotFoundComponent,
     LoginComponent,
@@ -49,7 +51,13 @@ import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-p
     PasswordInputComponent,
     SignupComponent,
     NameInputComponent,
-    ForgotPasswordComponent
+    ForgotPasswordComponent,
+    NavbarStComponent,
+    HomeStComponent,
+    SettingsMenuComponent,
+    NavMenuComponent,
+    NavbarSpComponent,
+    HomeSpComponent
   ],
   imports: [
     BrowserModule,
