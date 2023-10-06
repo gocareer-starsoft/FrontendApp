@@ -1,7 +1,7 @@
-import { CareerEntity } from './career.entity';
+import { Career } from './career.entity';
 
 describe('CareerEntity', () => {
   it('should create an instance', () => {
-    expect(new CareerEntity()).toBeTruthy();
+    expect(new Career()).toBeTruthy();
   });
 });

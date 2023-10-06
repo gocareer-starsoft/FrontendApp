@@ -31,6 +31,7 @@ import { NavMenuComponent } from './public/components/nav-menu/nav-menu.componen
 import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
 import { CareerOptionsComponent } from './public/pages/career-options/career-options.component';
+import {CareersService} from "./public/services/careers.service";
 
 @NgModule({
   declarations: [
@@ -68,7 +69,7 @@ import { CareerOptionsComponent } from './public/pages/career-options/career-opt
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CareersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
