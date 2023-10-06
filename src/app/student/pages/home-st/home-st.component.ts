@@ -15,9 +15,6 @@ export class HomeStComponent {
         'Disponible para todos los usuarios' },
     { imageUrl: 'assets/images/home-specialists.jpg',
       textInfo: 'Asiste a nuestra charla sobre competencias digitales.' +
-        'Disponible para todos los usuarios' },
-    { imageUrl: 'assets/images/home-especial.jpg',
-      textInfo: 'Asiste a nuestra charla sobre competencias digitales.' +
         'Disponible para todos los usuarios' }
   ];
 }

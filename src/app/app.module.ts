@@ -25,12 +25,11 @@ import { PasswordInputComponent } from './public/components/password-input/passw
 import { SignupComponent } from './public/pages/signup/signup.component';
 import { NameInputComponent } from './public/components/name-input/name-input.component';
 import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-password.component';
-import { NavbarStComponent } from './student/components/navbar-st/navbar-st.component';
 import { HomeStComponent } from './student/pages/home-st/home-st.component';
 import { SettingsMenuComponent } from './public/components/settings-menu/settings-menu.component';
 import { NavMenuComponent } from './public/components/nav-menu/nav-menu.component';
-import { NavbarSpComponent } from './specialist/components/navbar-sp/navbar-sp.component';
 import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
+import { NavbarComponent } from './public/components/navbar/navbar.component';
 
 @NgModule({
   declarations: [
@@ -52,12 +51,11 @@ import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
     SignupComponent,
     NameInputComponent,
     ForgotPasswordComponent,
-    NavbarStComponent,
     HomeStComponent,
     SettingsMenuComponent,
     NavMenuComponent,
-    NavbarSpComponent,
-    HomeSpComponent
+    HomeSpComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,

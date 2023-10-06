@@ -13,7 +13,7 @@
   --bg-div-color: white;
 
   /* Tipografía */
-  --tipo-principal: Helvetica, Arial, sans-serif;
+  --tipo-principal: Roboto, "Helvetica Neue", sans-serif;
   --tipo-secundaria: Verdana;
 }
 
@@ -127,6 +127,7 @@ html {
 body {
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   font-size: 100%;
   font-family: var(--tipo-principal);
   color: var(--negro);
@@ -134,65 +135,74 @@ body {
 }
 
 section {
-  padding: 6rem 0;
+  padding: max(1rem, 7%) 0;
   color: black;
+  font-size: 1.2em;
 }
 
 .container {
   max-width: 1700px;
   height: 100%;
-  margin: 0 auto;
-  padding: 0 3%;
+  margin: 0 auto !important;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2em;
 }
 .layout {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11);
   border-radius: 50px;
-  overflow: hidden;
-}
-.menu {
-    background: var(--bg-div-color) !important;
-    border-radius: 20px;
-}
-.bg-light {
-    color: var(--font-color-bg-light) !important;
 }
 .view {
   min-height: 100vh;
 }
-.btn {
-  padding: 1rem 1.5rem;
+button.btn {
+  padding: 1rem 1.5rem 1rem 1rem;
   background-color: var(--primary-color);
-  color: var(--font-color-bg-dark);
+  color: var(--font-color-bg-dark) !important;
   border-radius: 30px;
 }
 .content {
-  padding: 2rem;
+  padding: 2.5rem;
   border-radius: 20px;
 }
-.content .title {
+.content .header {
   font-size: 2.5em;
   font-weight: bold;
   color: var(--secondary-color);
+  padding-bottom: 1rem;
 }
-@media (max-width: 1000px) and (min-width: 0px) {
-  .view {
-    font-size: 85%;
-  }
+@media (max-width: 1800px) {
   .container {
-    text-align: center;
+    gap: 1rem;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    font-size: 85%;
   }
   .layout {
     padding: 2.5rem 2rem !important;
   }
 }
-@media (max-width: 500px) and (min-width: 0px) {
+@media (max-width: 900px) {
   .container {
-    font-size: 60%;
+    flex-direction: column;
+  }
+  .content {
+    padding: 2em;
   }
   .layout {
     padding: 2rem 1rem !important;
   }
 }
+@media (max-width: 425px) {
+  .content {
+    padding: 1.5em;
+  }
+}
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+mat-card-header, mat-card-content, mat-card-actions,
+mat-card-footer, mat-list-item, mat-form-field {
+  padding: 0 !important;
+}
