@@ -30,6 +30,10 @@ import { SettingsMenuComponent } from './public/components/settings-menu/setting
 import { NavMenuComponent } from './public/components/nav-menu/nav-menu.component';
 import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
+import { TalksCardComponent } from './public/components/talks-card/talks-card.component';
+import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
+import { TalksStComponent } from './student/pages/talks-st/talks-st.component';
+import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
 
 @NgModule({
   declarations: [
@@ -55,7 +59,11 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     SettingsMenuComponent,
     NavMenuComponent,
     HomeSpComponent,
-    NavbarComponent
+    NavbarComponent,
+    TalksCardComponent,
+    TestsCardComponent,
+    TalksStComponent,
+    TestsStComponent
   ],
   imports: [
     BrowserModule,

@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<section class="home">
+<section class="talks">
   <div class="container">
     <app-profile/>
     <div class="content">
@@ -7,15 +7,16 @@
         <div class="header">
           <button class="icon-home" mat-fab
                   aria-label="Example icon button with a home icon">
-            <mat-icon>home</mat-icon>
+            <mat-icon>edit_document</mat-icon>
           </button>
-          Home
+          Tests
         </div>
-        <app-rectangular-card
+        <app-tests-card
           *ngFor="let card of cardData"
           [imageUrl]="card.imageUrl"
-          [textInfo]="card.textInfo">
-        </app-rectangular-card>
+          [title]="card.title"
+          [amount]="card.amount">
+        </app-tests-card>
         <mat-divider></mat-divider>
       </div>
       <div class="end">

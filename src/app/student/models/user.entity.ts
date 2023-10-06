@@ -14,7 +14,7 @@ export class User {
     this.email = "example@gmail.com";
     this.password = "";
     this.phone = "";
-    this.avatarUrl = "assets/images/home-test.jpg";
+    this.avatarUrl = "assets/img/home-test.jpg";
     this.bio = "";
   }
 }
