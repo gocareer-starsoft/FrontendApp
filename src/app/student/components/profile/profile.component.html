@@ -2,38 +2,43 @@
   <mat-card-header>
     <img [src]="user.avatarUrl" alt="User Avatar">
   </mat-card-header>
+
   <mat-card-content>
-    <mat-card-title>{{ user.name }}</mat-card-title>
-    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-    <div class="data" *ngIf="userData">
-      <ul class="list">
-        <li><b>Nombre: </b>{{ user.name }}</li>
-        <li><b>Apellido: </b>{{ user.email }}</li>
-        <li><b>Email: </b>{{ user.email }}</li>
-        <li><b>Phone: </b>{{ user.phone }}</li>
-        <li><b>Bio: </b>{{ user.bio }}</li>
-      </ul>
-
-    </div>
-
-    <div class="end" *ngIf="editMode">
-      <label for="name">Nombre:</label>
-      <input id="name" [(ngModel)]="user.name" placeholder="Nombre">
-
-      <label for="email">Email:</label>
-      <input id="email" [(ngModel)]="user.email" placeholder="Email">
-
-      <label for="phone">Teléfono:</label>
-      <input id="phone" [(ngModel)]="user.phone" placeholder="Teléfono">
-
-      <label for="bio">Bio:</label>
-      <textarea id="bio" [(ngModel)]="user.bio" placeholder="Biografía"></textarea>
-    </div>
+    <mat-card-title>{{ user.name }} {{ user.lastname }}</mat-card-title>
+    <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
   </mat-card-content>
+
+  <mat-card-content *ngIf="userData">
+    {{ user.bio }}
+  </mat-card-content>
+
+  <mat-card-content class="edit" *ngIf="editMode">
+    <div class="name">
+      <mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput [(ngModel)]="user.name">
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Last Name</mat-label>
+        <input matInput [(ngModel)]="user.lastname">
+      </mat-form-field>
+    </div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="user.email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Biografía</mat-label>
+      <textarea matInput [(ngModel)]="user.bio" placeholder="Escribir.."></textarea>
+    </mat-form-field>
+  </mat-card-content>
+
   <mat-card-actions>
-    <button *ngIf="userData" mat-button
-            (click)="editData()">Editar Perfil</button>
-    <button *ngIf="editMode" mat-button
-            (click)="saveProfile()">Guardar</button>
+    <button class="btn" *ngIf="userData" mat-button
+            (click)="editData()">
+      <mat-icon>edit</mat-icon>Editar Perfil</button>
+    <button class="btn" *ngIf="editMode" mat-button
+            (click)="saveProfile()">
+      <mat-icon>save</mat-icon>Guardar</button>
   </mat-card-actions>
 </mat-card>
