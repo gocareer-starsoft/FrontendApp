@@ -1,13 +1,10 @@
-<form class="form layout">
-  <i class="fa-solid fa-magnifying-glass"></i>
-  <input type="text"
-         placeholder="Busca tu carrera.."
-         [formControl]="control"
-         [matAutocomplete]="auto"
-         class="input-search">
-  <mat-autocomplete #auto="matAutocomplete" class="menu">
-    <mat-option class="bg-light" *ngFor="let street of filteredStreets | async" [value]="street">
-      {{street}}
-    </mat-option>
-  </mat-autocomplete>
-</form>
+<input type="search" matInput
+       placeholder="Busca tu carrera.."
+       [formControl]="control"
+       [matAutocomplete]="auto"
+       class="input-search">
+<mat-autocomplete #auto="matAutocomplete" class="menu">
+  <mat-option class="bg-light" *ngFor="let street of filteredStreets | async" [value]="street">
+    {{street}}
+  </mat-option>
+</mat-autocomplete>

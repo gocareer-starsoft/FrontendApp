@@ -5,11 +5,9 @@ import { NotFoundComponent} from "./public/pages/not-found/not-found.component";
 import { LoginComponent} from "./public/pages/login/login.component";
 import { SignupComponent} from "./public/pages/signup/signup.component";
 import { ForgotPasswordComponent } from "./public/pages/forgot-password/forgot-password.component";
-import { HomeComponent } from "./student/pages/home/home.component";
+import { HomeStComponent } from "./student/pages/home-st/home-st.component";
 import { ProfileComponent } from "./student/components/profile/profile.component";
-import {
-  PrincipalPageSpecialistComponent
-} from "./specialist/pages/principal-page-specialist/principal-page-specialist.component";
+import { HomeSpComponent } from "./specialist/pages/home-sp/home-sp.component";
 import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 
 const routes: Routes = [
@@ -17,9 +15,9 @@ const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'signup', component: SignupComponent },
   { path: 'forgot-password', component: ForgotPasswordComponent },
-  { path: 'st/home', component: HomeComponent },
+  { path: 'st/home', component: HomeStComponent },
   { path: 'profile', component: ProfileComponent },
-  { path: 'sp/home', component: PrincipalPageSpecialistComponent },
+  { path: 'sp/home', component: HomeSpComponent },
   { path: 'users-specialist', component:UsersOfSpecialistComponent },
   { path: '**', component: NotFoundComponent }
 ];
