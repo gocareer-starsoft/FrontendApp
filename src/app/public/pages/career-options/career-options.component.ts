@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {Career} from "../../models/career.entity";
 
 @Component({
   selector: 'app-career-options',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./career-options.component.css']
 })
 export class CareerOptionsComponent {
-
+  @Input() careers: Array<Career>=[]
 }
