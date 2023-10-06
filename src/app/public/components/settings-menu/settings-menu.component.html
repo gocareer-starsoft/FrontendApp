@@ -1,0 +1,30 @@
+<button mat-icon-button class="icon-settings"
+        aria-label="Example icon-button with user-profile icon"
+        [matMenuTriggerFor]="settings">
+  <mat-icon>settings</mat-icon>
+</button>
+<mat-menu #settings="matMenu">
+  <button mat-menu-item [matMenuTriggerFor]="language">
+    <mat-icon>language</mat-icon>Languaje</button>
+  <button mat-menu-item [matMenuTriggerFor]="theme">
+    <mat-icon>contrast</mat-icon>Theme</button>
+  <button class="bg-light" mat-menu-item>
+    <mat-icon>manage_accounts</mat-icon>Settigns</button>
+  <mat-divider></mat-divider>
+  <button class="bg-light" mat-menu-item (click)="signOut()">
+    <mat-icon>logout</mat-icon>Logout</button>
+</mat-menu>
+
+<mat-menu #language="matMenu">
+  <button mat-menu-item>English</button>
+  <button mat-menu-item>Spanish</button>
+</mat-menu>
+
+<mat-menu #theme="matMenu">
+  <button mat-menu-item>
+    <mat-icon>light_mode</mat-icon>Mode Light</button>
+  <button mat-menu-item>
+    <mat-icon>dark_mode</mat-icon>Mode Dark</button>
+  <button mat-menu-item>
+    <mat-icon>contrast</mat-icon>System Default</button>
+</mat-menu>
