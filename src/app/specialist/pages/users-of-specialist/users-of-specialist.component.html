@@ -1,0 +1,11 @@
+<app-navbar-st></app-navbar-st>
+
+<div class="search">
+  <app-search></app-search>
+</div>
+
+
+<div class="cards">
+  <app-card-user *ngFor="let user of users" [user]="user.name" [userImage]="user.image" ></app-card-user>
+</div>
+

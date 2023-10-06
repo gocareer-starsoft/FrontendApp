@@ -1,3 +1,5 @@
+@import '@angular/material/prebuilt-themes/indigo-pink.css';
+
 /* Definimos las Custom properties */
 :root {
   /* Colores */
@@ -5,7 +7,8 @@
   --font-color-bg-light: black;
   --font-color-bg-dark: white;
   --primary-color: rgba(19, 94, 136, 0.8);
-  --secondary-color: rgba(19, 94, 136, 0.3);
+  --secondary-color: rgb(5, 38, 59);
+  --shadow-color: rgba(19, 94, 136, 0.3);
   --bg-body-color: #EDEDED;
   --bg-div-color: white;
 
@@ -131,19 +134,19 @@ body {
 }
 
 section {
-  padding: 7rem 0;
+  padding: 6rem 0;
   color: black;
 }
 
 .container {
-  max-width: 1500px;
+  max-width: 1700px;
   height: 100%;
   margin: 0 auto;
   padding: 0 3%;
 }
 .layout {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.11);
-  border-radius: 20px;
+  border-radius: 50px;
   overflow: hidden;
 }
 .menu {
@@ -153,14 +156,43 @@ section {
 .bg-light {
     color: var(--font-color-bg-light) !important;
 }
+.view {
+  min-height: 100vh;
+}
+.btn {
+  padding: 1rem 1.5rem;
+  background-color: var(--primary-color);
+  color: var(--font-color-bg-dark);
+  border-radius: 30px;
+}
+.content {
+  padding: 2rem;
+  border-radius: 20px;
+}
+.content .title {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: var(--secondary-color);
+}
 @media (max-width: 1000px) and (min-width: 0px) {
+  .view {
+    font-size: 85%;
+  }
   .container {
-    font-size: 80%;
     text-align: center;
+  }
+  .layout {
+    padding: 2.5rem 2rem !important;
   }
 }
 @media (max-width: 500px) and (min-width: 0px) {
   .container {
     font-size: 60%;
   }
+  .layout {
+    padding: 2rem 1rem !important;
+  }
 }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

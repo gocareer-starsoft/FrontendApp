@@ -1,0 +1,23 @@
+.rectangle-card {
+  width: 40rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 20px;
+  .start {
+    min-width: 10rem;
+    max-width: 11rem;
+    & img {
+      border-radius: 10px;
+    }
+  }
+  .end {
+    .actions {
+      display: flex;
+      gap: 1rem;
+      & button {
+        background-color: var(--primary-color);
+      }
+    }
+  }
+}

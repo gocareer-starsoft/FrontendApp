@@ -1,0 +1,77 @@
+.profile {
+    width: 25rem;
+  max-width: 400px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+mat-card-header, mat-card-content, mat-card-actions {
+  padding: 0;
+}
+.profile img {
+    min-width: 200px;
+    max-width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.profile h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+h1 {
+    font-size: 1.5em;
+}
+ul {
+    padding: 2rem 0;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+div[ngIf="editMode"] {
+    min-width: 50rem;
+    background-color: #fff;
+    padding: 2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+    & input {
+        min-width: 50rem;
+    }
+}

@@ -1,0 +1,18 @@
+<app-navbar-st></app-navbar-st>
+
+<div class="search">
+  <app-search></app-search>
+</div>
+
+
+<div class="cards">
+  <app-card-specialist *ngFor="let card of cards"
+                       [image]="card.imageUrl"
+                       [textbutton]=card.textbutton
+                       [pathforbutton]="card.pathbutton"
+                       [text]=card.text>
+
+  </app-card-specialist>
+
+</div>
+

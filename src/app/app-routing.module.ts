@@ -2,17 +2,23 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { LandingComponent} from "./public/pages/landing/landing.component";
 import { NotFoundComponent} from "./public/pages/not-found/not-found.component";
-import { LoginComponent} from "./public/components/login/login.component";
-import { ForgotpasswordComponent} from "./public/components/forgotpassword/forgotpassword.component";
-import { HomeComponent } from "./gocareer/pages/home/home.component";
-import { ProfileComponent } from "./gocareer/pages/profile/profile.component";
+import { LoginComponent} from "./public/pages/login/login.component";
+import { SignupComponent} from "./public/pages/signup/signup.component";
+import { ForgotPasswordComponent } from "./public/pages/forgot-password/forgot-password.component";
+import { HomeStComponent } from "./student/pages/home-st/home-st.component";
+import { ProfileComponent } from "./student/components/profile/profile.component";
+import { HomeSpComponent } from "./specialist/pages/home-sp/home-sp.component";
+import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
   { path: 'login', component: LoginComponent },
-  { path: 'checkpoint', component: ForgotpasswordComponent },
-  { path: 'home', component: HomeComponent },
+  { path: 'signup', component: SignupComponent },
+  { path: 'forgot-password', component: ForgotPasswordComponent },
+  { path: 'st/home', component: HomeStComponent },
   { path: 'profile', component: ProfileComponent },
+  { path: 'sp/home', component: HomeSpComponent },
+  { path: 'users-specialist', component:UsersOfSpecialistComponent },
   { path: '**', component: NotFoundComponent }
 ];
 
