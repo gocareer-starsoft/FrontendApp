@@ -3,5 +3,31 @@
     {
 
     }
+  ],
+  "careers": [
+    {
+      "id": 1,
+      "title": "Contaduría",
+      "description": "Este trabajo requiere saber manejo de Excel y de herramientas virtuales, conocimiento en estadísticas y economía",
+      "source": "Estudia Perú"
+    },
+    {
+      "id": 2,
+      "title": "Tutoría virtual",
+      "description": "Destaca en el uso de habilidades comunicativas para el aprendizaje y el manejo de plataformas virtuales para brindar el servicio",
+      "source": ""
+    },
+    {
+      "id": 3,
+      "title": "Reparación automotriz",
+      "description": "Aprende técnicas para la reparación de motores de combustión interna y mejoras en carrocería y chasis",
+      "source": ""
+    },
+    {
+      "id": 4,
+      "title": "Ilustración digital",
+      "description": "Se fomentan las habilidades creativas y se requiere aprender sobre herramientas de dibujo y edición digital",
+      "source": "Toulouse Lautrec"
+    }
   ]
 }
