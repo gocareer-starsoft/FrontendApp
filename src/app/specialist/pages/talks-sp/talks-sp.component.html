@@ -1,5 +1,5 @@
 <app-navbar></app-navbar>
-<section class="home">
+<section class="talks">
   <div class="container">
     <app-profile/>
     <div class="content">
@@ -7,19 +7,20 @@
         <div class="header">
           <button class="icon-home" mat-fab
                   aria-label="Example icon button with a home icon">
-            <mat-icon>home</mat-icon>
+            <mat-icon>groups</mat-icon>
           </button>
-          Home
+          Talks
         </div>
-        <app-rectangular-card
+        <app-talks-card
           *ngFor="let card of cardData"
           [imageUrl]="card.imageUrl"
-          [textInfo]="card.textInfo">
-        </app-rectangular-card>
+          [title]="card.title"
+          [date]="card.date">
+        </app-talks-card>
         <mat-divider></mat-divider>
       </div>
       <div class="end">
-        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+        <img class="img-section" src="assets/img/section.png" alt="image of section">
       </div>
     </div>
   </div>

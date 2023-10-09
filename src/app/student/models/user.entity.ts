@@ -7,6 +7,7 @@ export class User {
   phone: string;
   avatarUrl: string;
   bio: string;
+  specialist: boolean;
   constructor() {
     this.id = 1;
     this.name = "Jack";
@@ -14,7 +15,8 @@ export class User {
     this.email = "example@gmail.com";
     this.password = "";
     this.phone = "";
-    this.avatarUrl = "assets/images/home-test.jpg";
-    this.bio = "";
+    this.avatarUrl = "assets/img/home-test.jpg";
+    this.bio = "Add your bio here";
+    this.specialist = false;
   }
 }

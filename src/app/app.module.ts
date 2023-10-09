@@ -31,6 +31,17 @@ import { NavMenuComponent } from './public/components/nav-menu/nav-menu.componen
 import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
 
+import { CareerOptionsComponent } from './public/pages/career-options/career-options.component';
+import {CareersService} from "./public/services/careers.service";
+
+import { TalksCardComponent } from './public/components/talks-card/talks-card.component';
+import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
+import { TalksStComponent } from './student/pages/talks-st/talks-st.component';
+import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
+import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
+import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -55,7 +66,15 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     SettingsMenuComponent,
     NavMenuComponent,
     HomeSpComponent,
-    NavbarComponent
+    NavbarComponent,
+    CareerOptionsComponent,
+    TalksCardComponent,
+    TestsCardComponent,
+    TalksStComponent,
+    TestsStComponent,
+    TalksSpComponent,
+    TestsSpComponent
+
   ],
   imports: [
     BrowserModule,
@@ -66,7 +85,7 @@ import { NavbarComponent } from './public/components/navbar/navbar.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [CareersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
