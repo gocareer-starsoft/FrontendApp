@@ -10,6 +10,8 @@ import { TalksStComponent } from "./student/pages/talks-st/talks-st.component";
 import { TestsStComponent } from "./student/pages/tests-st/tests-st.component";
 import { ProfileComponent } from "./student/components/profile/profile.component";
 import { HomeSpComponent } from "./specialist/pages/home-sp/home-sp.component";
+import { TalksSpComponent } from "./specialist/pages/talks-sp/talks-sp.component";
+import { TestsSpComponent } from "./specialist/pages/tests-sp/tests-sp.component";
 import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 import {CareerOptionsComponent} from "./public/pages/career-options/career-options.component";
 
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'st/tests', component: TestsStComponent },
   { path: 'profile', component: ProfileComponent },
   { path: 'sp/home', component: HomeSpComponent },
+  { path: 'sp/talks', component: TalksSpComponent },
+  { path: 'sp/tests', component: TestsSpComponent },
   { path: 'career', component: CareerOptionsComponent },
   { path: 'users-specialist', component:UsersOfSpecialistComponent },
   { path: '**', component: NotFoundComponent }
