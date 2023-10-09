@@ -38,6 +38,8 @@ import { TalksCardComponent } from './public/components/talks-card/talks-card.co
 import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
 import { TalksStComponent } from './student/pages/talks-st/talks-st.component';
 import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
+import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
+import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
 
 
 @NgModule({
@@ -65,13 +67,13 @@ import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
     NavMenuComponent,
     HomeSpComponent,
     NavbarComponent,
-
-    CareerOptionsComponent
-
+    CareerOptionsComponent,
     TalksCardComponent,
     TestsCardComponent,
     TalksStComponent,
-    TestsStComponent
+    TestsStComponent,
+    TalksSpComponent,
+    TestsSpComponent
 
   ],
   imports: [
