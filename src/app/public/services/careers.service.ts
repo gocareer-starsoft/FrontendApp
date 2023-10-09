@@ -10,6 +10,6 @@ export class CareersService extends BaseService<Career>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint='/products'
+    this.resourceEndpoint='/careers'
   }
 }
