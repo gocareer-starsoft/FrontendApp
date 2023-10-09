@@ -3,7 +3,7 @@
     <div class="logo-menu">
       <img class="img-logo" src="../../../../assets/img/logo.png"
            alt="logo" routerLink="/st/home">
-      <app-nav-menu/>
+      <app-nav-menu [userType]="userType"></app-nav-menu>
     </div>
     <button mat-icon-button class="btn-shortcut">
       <mat-icon>workspace_premium</mat-icon>
@@ -11,7 +11,7 @@
 
     <span class="example-spacer"></span>
 
-    <button mat-icon-button class="example-icon"
+    <button mat-icon-button class="example-icon" [routerLink]="[userType, 'career']"
             aria-label="Example icon-button with user-profile icon">
       <mat-icon>search</mat-icon>
     </button>
