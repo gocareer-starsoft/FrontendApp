@@ -5,8 +5,7 @@
 </button>
 
 <mat-menu class="menu" #menu="matMenu">
-  <button class="bg-light" mat-menu-item [routerLink]="['/notifications']">Notificaciones</button>
-  <button class="bg-light" mat-menu-item [routerLink]="['talks']">Conocer Especialistas</button>
-  <button class="bg-light" mat-menu-item [routerLink]="['tests']">Realizar Test</button>
-  <button class="bg-light" mat-menu-item [routerLink]="['/career']">Carreras</button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'home']">Home</button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'talks']">Talks</button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'tests']">Tests</button>
 </mat-menu>
