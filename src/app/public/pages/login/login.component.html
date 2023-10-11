@@ -6,13 +6,13 @@
         <p>Por favor inicie sesión para continuar</p>
       </mat-card-header>
       <mat-card-content>
-        <app-email-input/>
-        <app-password-input/>
+        <app-email-input></app-email-input>
+        <app-password-input></app-password-input>
         <a class="checkpoint-link" routerLink="/forgot-password">¿Olvidó su contraseña?</a>
-        <button class="btn" routerLink="/st/home">Ingresa ahora</button>
+        <button class="btn" (click)="onLogin()">Ingresa ahora</button>
       </mat-card-content>
       <mat-card-footer>
-        <p>¿Aun no tienes una cuenta?
+        <p class="footer-text">¿Aun no tienes una cuenta?
           <a class="register-link" (click)="onSignup()">Únete!!</a>
         </p>
       </mat-card-footer>

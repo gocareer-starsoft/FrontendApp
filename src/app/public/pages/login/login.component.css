@@ -29,29 +29,28 @@ mat-card {
 mat-card-header {
   flex-direction: column;
   padding: 0 0 2em 0;
-}
-mat-card-content {
-  padding: 0;
-}
-h1 {
-  font-size: 3.5em;
-  font-weight: 700;
-  color: var(--primary-color);
-}
-p {
-  margin: 0;
+  & h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  & p {
+    margin: 0;
+    padding-bottom: 2rem;
+  }
 }
 .checkpoint-link {
   padding-bottom: 1rem;
   font-weight: 500;
 }
-mat-card-footer {
-  padding-top: 2rem;
-}
 .register-link {
   font-weight: bold;
   text-decoration: underline;
   cursor: pointer;
+}
+.footer-text {
+  padding-top: 2rem;
+  margin-bottom: 0;
 }
 @keyframes slideIn {
   from {
