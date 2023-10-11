@@ -1,13 +1,16 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-import { MaterialModule } from "./shared/material.module";
 import { HttpClientModule } from "@angular/common/http";
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppRoutingModule } from './app-routing.module';
+import { MaterialModule } from "./shared/material.module";
+import { AppComponent } from './app.component';
+
+import { UsersService } from './public/services/users.service';
+import { CareersService } from "./public/services/careers.service";
+
 import { HeaderComponent } from './public/components/header/header.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { LandingComponent } from './public/pages/landing/landing.component';
@@ -32,7 +35,6 @@ import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
 
 import { CareerOptionsComponent } from './public/pages/career-options/career-options.component';
-import {CareersService} from "./public/services/careers.service";
 
 import { TalksCardComponent } from './public/components/talks-card/talks-card.component';
 import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
@@ -40,7 +42,6 @@ import { TalksStComponent } from './student/pages/talks-st/talks-st.component';
 import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
 import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
 import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
-
 
 @NgModule({
   declarations: [
@@ -85,7 +86,7 @@ import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [CareersService],
+  providers: [UsersService, CareersService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
