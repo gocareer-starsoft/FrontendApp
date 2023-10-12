@@ -29,18 +29,21 @@ mat-card-header {
   padding: 0;
 }
 mat-card-header {
-  padding-bottom: 2em;
+  & h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: var(--primary-color);
+  }
+  & p {
+    padding-bottom: 2em;
+  }
 }
 mat-card-content {
   padding: 0;
 }
-h1 {
-  font-size: 3.5em;
-  font-weight: 700;
-  color: var(--primary-color);
-}
+
 button {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 mat-card-footer {
   padding-top: 2rem;
@@ -50,8 +53,9 @@ mat-card-footer {
   text-decoration: underline;
   cursor: pointer;
 }
-p {
+.footer-text {
   margin: 0;
+  padding-top: 2em;
 }
 
 @keyframes slideIn {

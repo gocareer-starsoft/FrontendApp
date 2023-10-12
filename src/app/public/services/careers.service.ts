@@ -6,7 +6,7 @@ import {HttpClient} from "@angular/common/http";
 @Injectable({
   providedIn: 'root'
 })
-export class CareersService extends BaseService<Career>{
+export class CareersService extends BaseService<Career> {
 
   constructor(http: HttpClient) {
     super(http);

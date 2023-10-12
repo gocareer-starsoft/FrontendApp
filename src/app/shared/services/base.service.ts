@@ -25,7 +25,7 @@ export class BaseService<T> {
     }
     return throwError(()=>new Error("Something happened with request, please try again later."))
   }
-  private resourcePath():string{
+  private resourcePath():string {
     return `${this.basePath}${this.resourceEndpoint}`;
   }
 
