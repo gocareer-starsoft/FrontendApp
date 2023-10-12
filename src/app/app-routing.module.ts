@@ -34,6 +34,10 @@ const routes: Routes = [
       { path: 'home', component: HomeStComponent },
       { path: 'talks', component: TalksStComponent },
       { path: 'tests', component: TestsStComponent },
+      {
+        path: 'careers', component: CareerOptionsComponent,
+        data: { title: 'Career Options' }
+      },
     ]
   },
   {
@@ -43,10 +47,6 @@ const routes: Routes = [
       { path: 'talks', component: TalksSpComponent },
       { path: 'tests', component: TestsSpComponent },
     ]
-  },
-  {
-    path: 'career', component: CareerOptionsComponent,
-    data: { title: 'Career Options' }
   },
   {
     path: 'users-specialist', component: UsersOfSpecialistComponent,
