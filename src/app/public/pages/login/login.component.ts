@@ -1,6 +1,6 @@
 import {Component, ViewChild} from '@angular/core';
 import { Router } from "@angular/router";
-import { User } from "../../../student/models/user.entity";
+import { User } from "../../models/user.entity";
 import {PasswordInputComponent} from "../../components/password-input/password-input.component";
 import {EmailInputComponent} from "../../components/email-input/email-input.component";
 import {AuthService} from "../../services/auth.service";

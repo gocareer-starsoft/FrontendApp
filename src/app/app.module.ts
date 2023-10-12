@@ -9,17 +9,16 @@ import { MaterialModule } from "./shared/material.module";
 import { AppComponent } from './app.component';
 
 import { UsersService } from './public/services/users.service';
-import { CareersService } from "./public/services/careers.service";
+import { CareersService } from "./student/services/careers.service";
 
 import { HeaderComponent } from './public/components/header/header.component';
 import { FooterComponent } from './public/components/footer/footer.component';
 import { LandingComponent } from './public/pages/landing/landing.component';
-import { ProfileComponent } from './student/components/profile/profile.component';
+import { ProfileComponent } from './public/components/profile/profile.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 import { LoginComponent } from './public/pages/login/login.component';
 import { RectangularCardComponent } from './student/components/rectangular-card/rectangular-card.component';
 import { SearchComponent } from './student/components/search/search.component';
-import { PrincipalPageSpecialistComponent } from './specialist/pages/principal-page-specialist/principal-page-specialist.component';
 import { UsersOfSpecialistComponent } from './specialist/pages/users-of-specialist/users-of-specialist.component';
 import { CardUserComponent } from './specialist/components/card-user/card-user.component';
 import { CardSpecialistComponent } from './specialist/components/card-specialist/card-specialist.component';
@@ -34,7 +33,7 @@ import { NavMenuComponent } from './public/components/nav-menu/nav-menu.componen
 import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
 import { NavbarComponent } from './public/components/navbar/navbar.component';
 
-import { CareerOptionsComponent } from './public/pages/career-options/career-options.component';
+import { CareerOptionsComponent } from './student/pages/career-options/career-options.component';
 
 import { TalksCardComponent } from './public/components/talks-card/talks-card.component';
 import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
@@ -54,7 +53,6 @@ import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component
     LoginComponent,
     RectangularCardComponent,
     SearchComponent,
-    PrincipalPageSpecialistComponent,
     UsersOfSpecialistComponent,
     CardUserComponent,
     CardSpecialistComponent,

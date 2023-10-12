@@ -12,7 +12,7 @@ import { HomeSpComponent } from "./specialist/pages/home-sp/home-sp.component";
 import { TalksSpComponent } from "./specialist/pages/talks-sp/talks-sp.component";
 import { TestsSpComponent } from "./specialist/pages/tests-sp/tests-sp.component";
 import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
-import {CareerOptionsComponent} from "./public/pages/career-options/career-options.component";
+import {CareerOptionsComponent} from "./student/pages/career-options/career-options.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent, title: 'GoCareer' },
