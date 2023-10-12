@@ -34,10 +34,7 @@ const routes: Routes = [
       { path: 'home', component: HomeStComponent },
       { path: 'talks', component: TalksStComponent },
       { path: 'tests', component: TestsStComponent },
-      {
-        path: 'careers', component: CareerOptionsComponent,
-        data: { title: 'Career Options' }
-      },
+      { path: 'careers', component: CareerOptionsComponent }
     ]
   },
   {
@@ -46,11 +43,8 @@ const routes: Routes = [
       { path: 'home', component: HomeSpComponent },
       { path: 'talks', component: TalksSpComponent },
       { path: 'tests', component: TestsSpComponent },
+      { path: 'users-specialist', component: UsersOfSpecialistComponent }
     ]
-  },
-  {
-    path: 'users-specialist', component: UsersOfSpecialistComponent,
-    data: { title: 'Users of Specialist' }
   },
   { path: '**', component: NotFoundComponent, title: 'Not Found' }
 ];
