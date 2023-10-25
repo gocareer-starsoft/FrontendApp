@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Career} from "../../models/career.entity";
+import {Career} from "../../model/career.entity";
 import {CareersService} from "../../services/careers.service";
 
 @Component({

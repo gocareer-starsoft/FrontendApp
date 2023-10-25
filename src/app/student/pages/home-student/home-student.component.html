@@ -1,0 +1,27 @@
+<app-bar-of-navigation></app-bar-of-navigation>
+<section class="home">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="content">
+      <div class="start">
+        <div class="header">
+          <button class="icon-home" mat-fab
+                  aria-label="Example icon button with a home icon">
+            <mat-icon>home</mat-icon>
+          </button>
+          Home
+        </div>
+        <app-card-of-home
+          *ngFor="let card of cardData"
+          [imageUrl]="card.imageUrl"
+          [textInfo]="card.textInfo">
+        </app-card-of-home>
+        <mat-divider></mat-divider>
+      </div>
+      <div class="end">
+        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+      </div>
+    </div>
+  </div>
+</section>
+

@@ -11,68 +11,68 @@ import { AppComponent } from './app.component';
 import { UsersService } from './public/services/users.service';
 import { CareersService } from "./student/services/careers.service";
 
-import { HeaderComponent } from './public/components/header/header.component';
-import { FooterComponent } from './public/components/footer/footer.component';
-import { LandingComponent } from './public/pages/landing/landing.component';
-import { ProfileComponent } from './public/components/profile/profile.component';
+import { LandingHeaderComponent } from './public/components/landing-header/landing-header.component';
+import { LandingFooterComponent } from './public/components/landing-footer/landing-footer.component';
+import { LandingPageComponent } from './public/pages/landing-page/landing-page.component';
+import { ProfileOfUserComponent } from './public/components/profile-of-user/profile-of-user.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
 import { LoginComponent } from './public/pages/login/login.component';
-import { RectangularCardComponent } from './student/components/rectangular-card/rectangular-card.component';
+import { CardOfHomeComponent } from './public/components/card-of-home/card-of-home.component';
 import { SearchComponent } from './student/components/search/search.component';
-import { UsersOfSpecialistComponent } from './specialist/pages/users-of-specialist/users-of-specialist.component';
-import { CardUserComponent } from './specialist/components/card-user/card-user.component';
-import { CardSpecialistComponent } from './specialist/components/card-specialist/card-specialist.component';
-import { EmailInputComponent } from './public/components/email-input/email-input.component';
-import { PasswordInputComponent } from './public/components/password-input/password-input.component';
+import { SeeAllStudentsComponent } from './specialist/pages/see-all-students/see-all-students.component';
+import { CardOfUserComponent } from './specialist/components/card-of-user/card-of-user.component';
+import { CardOfSpecialistComponent } from './specialist/components/card-of-specialist/card-of-specialist.component';
+import { InputOfEmailComponent } from './public/components/input-of-email/input-of-email.component';
+import { InputOfPasswordComponent } from './public/components/input-of-password/input-of-password.component';
 import { SignupComponent } from './public/pages/signup/signup.component';
-import { NameInputComponent } from './public/components/name-input/name-input.component';
+import { InputOfNameComponent } from './public/components/input-of-name/input-of-name.component';
 import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-password.component';
-import { HomeStComponent } from './student/pages/home-st/home-st.component';
-import { SettingsMenuComponent } from './public/components/settings-menu/settings-menu.component';
-import { NavMenuComponent } from './public/components/nav-menu/nav-menu.component';
-import { HomeSpComponent } from './specialist/pages/home-sp/home-sp.component';
-import { NavbarComponent } from './public/components/navbar/navbar.component';
+import { HomeStudentComponent } from './student/pages/home-student/home-student.component';
+import { MenuOfSettingComponent } from './public/components/menu-of-setting/menu-of-setting.component';
+import { MenuOfNavigationComponent } from './public/components/menu-of-navigation/menu-of-navigation.component';
+import { HomeSpecialistComponent } from './specialist/pages/home-specialist/home-specialist.component';
+import { BarOfNavigationComponent } from './public/components/bar-of-navigation/bar-of-navigation.component';
 
 import { CareerOptionsComponent } from './student/pages/career-options/career-options.component';
 
-import { TalksCardComponent } from './public/components/talks-card/talks-card.component';
-import { TestsCardComponent } from './public/components/tests-card/tests-card.component';
-import { TalksStComponent } from './student/pages/talks-st/talks-st.component';
-import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
-import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
-import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
+import { CardOfTalkComponent } from './public/components/card-of-talk/card-of-talk.component';
+import { CardOfTestComponent } from './public/components/card-of-test/card-of-test.component';
+import { TalksWithSpecialistsComponent } from './student/pages/talks-with-specialists/talks-with-specialists.component';
+import { VocationalTestsComponent } from './student/pages/vocational-tests/vocational-tests.component';
+import { TalksWithStudentsComponent } from './specialist/pages/talks-with-students/talks-with-students.component';
+import { QualifyTestsComponent } from './specialist/pages/qualify-tests/qualify-tests.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    LandingComponent,
-    ProfileComponent,
+    LandingHeaderComponent,
+    LandingFooterComponent,
+    LandingPageComponent,
+    ProfileOfUserComponent,
     NotFoundComponent,
     LoginComponent,
-    RectangularCardComponent,
+    CardOfHomeComponent,
     SearchComponent,
-    UsersOfSpecialistComponent,
-    CardUserComponent,
-    CardSpecialistComponent,
-    EmailInputComponent,
-    PasswordInputComponent,
+    SeeAllStudentsComponent,
+    CardOfUserComponent,
+    CardOfSpecialistComponent,
+    InputOfEmailComponent,
+    InputOfPasswordComponent,
     SignupComponent,
-    NameInputComponent,
+    InputOfNameComponent,
     ForgotPasswordComponent,
-    HomeStComponent,
-    SettingsMenuComponent,
-    NavMenuComponent,
-    HomeSpComponent,
-    NavbarComponent,
+    HomeStudentComponent,
+    MenuOfSettingComponent,
+    MenuOfNavigationComponent,
+    HomeSpecialistComponent,
+    BarOfNavigationComponent,
     CareerOptionsComponent,
-    TalksCardComponent,
-    TestsCardComponent,
-    TalksStComponent,
-    TestsStComponent,
-    TalksSpComponent,
-    TestsSpComponent
+    CardOfTalkComponent,
+    CardOfTestComponent,
+    TalksWithSpecialistsComponent,
+    VocationalTestsComponent,
+    TalksWithStudentsComponent,
+    QualifyTestsComponent
 
   ],
   imports: [

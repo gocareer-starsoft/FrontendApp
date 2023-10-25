@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import {BaseService} from "../../shared/services/base.service";
-import {Career} from "../models/career.entity";
+import {Career} from "../model/career.entity";
 import {HttpClient} from "@angular/common/http";
 
 @Injectable({

@@ -1,8 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import { Router } from "@angular/router";
-import { User } from "../../models/user.entity";
-import {PasswordInputComponent} from "../../components/password-input/password-input.component";
-import {EmailInputComponent} from "../../components/email-input/email-input.component";
+import { User } from "../../model/user.entity";
+import {InputOfPasswordComponent} from "../../components/input-of-password/input-of-password.component";
+import {InputOfEmailComponent} from "../../components/input-of-email/input-of-email.component";
 import {AuthService} from "../../services/auth.service";
 
 @Component({
@@ -12,8 +12,8 @@ import {AuthService} from "../../services/auth.service";
 })
 export class LoginComponent {
     isHidden: boolean = false;
-    @ViewChild(EmailInputComponent) emailInput: any;
-    @ViewChild(PasswordInputComponent) passwordInput: any;
+    @ViewChild(InputOfEmailComponent) emailInput: any;
+    @ViewChild(InputOfPasswordComponent) passwordInput: any;
     users: Array<User> = [];
 
     constructor(private router: Router, private authService: AuthService) { }
