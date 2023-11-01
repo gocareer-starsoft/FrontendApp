@@ -14,6 +14,7 @@ import { TalksSpComponent } from "./specialist/pages/talks-sp/talks-sp.component
 import { TestsSpComponent } from "./specialist/pages/tests-sp/tests-sp.component";
 import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 import {CareerOptionsComponent} from "./public/pages/career-options/career-options.component";
+import {CalificateTestSpComponent} from "./specialist/pages/calificate-test-sp/calificate-test-sp.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
   { path: 'sp/tests', component: TestsSpComponent },
   { path: 'career', component: CareerOptionsComponent },
   { path: 'users-specialist', component:UsersOfSpecialistComponent },
+  { path: 'sp/qualify-test', component:CalificateTestSpComponent},
   { path: '**', component: NotFoundComponent }
 ];
 
