@@ -41,6 +41,7 @@ import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
 import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
 import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
 import { TestEvaluationComponent } from './specialist/components/test-evaluation/test-evaluation.component';
+import { CalificateTestSpComponent } from './specialist/pages/calificate-test-sp/calificate-test-sp.component';
 
 
 @NgModule({
@@ -75,7 +76,8 @@ import { TestEvaluationComponent } from './specialist/components/test-evaluation
     TestsStComponent,
     TalksSpComponent,
     TestsSpComponent,
-    TestEvaluationComponent
+    TestEvaluationComponent,
+    CalificateTestSpComponent
 
   ],
   imports: [
