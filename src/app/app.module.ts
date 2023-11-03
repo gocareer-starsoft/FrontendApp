@@ -42,6 +42,7 @@ import { TestsStComponent } from './student/pages/tests-st/tests-st.component';
 import { TalksSpComponent } from './specialist/pages/talks-sp/talks-sp.component';
 import { TestsSpComponent } from './specialist/pages/tests-sp/tests-sp.component';
 import { TestQuestionsComponent } from './student/components/test-questions/test-questions.component';
+import { QuestionTestStComponent } from './student/pages/question-test-st/question-test-st.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +75,8 @@ import { TestQuestionsComponent } from './student/components/test-questions/test
     TestsStComponent,
     TalksSpComponent,
     TestsSpComponent,
-    TestQuestionsComponent
+    TestQuestionsComponent,
+    QuestionTestStComponent
 
   ],
   imports: [
