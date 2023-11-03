@@ -13,6 +13,7 @@ import { TalksSpComponent } from "./specialist/pages/talks-sp/talks-sp.component
 import { TestsSpComponent } from "./specialist/pages/tests-sp/tests-sp.component";
 import {UsersOfSpecialistComponent} from "./specialist/pages/users-of-specialist/users-of-specialist.component";
 import {CareerOptionsComponent} from "./student/pages/career-options/career-options.component";
+import {QuestionTestStComponent} from "./student/pages/question-test-st/question-test-st.component";
 
 const routes: Routes = [
   { path: '', component: LandingComponent, title: 'GoCareer' },
@@ -43,7 +44,8 @@ const routes: Routes = [
       { path: 'home', component: HomeSpComponent },
       { path: 'talks', component: TalksSpComponent },
       { path: 'tests', component: TestsSpComponent },
-      { path: 'users-specialist', component: UsersOfSpecialistComponent }
+      { path: 'users-specialist', component: UsersOfSpecialistComponent },
+      { path: 'question', component: QuestionTestStComponent}
     ]
   },
   { path: '**', component: NotFoundComponent, title: 'Not Found' }
