@@ -14,6 +14,7 @@ import { QualifyTestsComponent } from "./specialist/pages/qualify-tests/qualify-
 import {SeeAllStudentsComponent} from "./specialist/pages/see-all-students/see-all-students.component";
 import {CareerOptionsComponent} from "./student/pages/career-options/career-options.component";
 import {TestQuestionComponent} from "./student/pages/test-question/test-question.component";
+import {EvaluationTestComponent} from "./specialist/pages/evaluation-test/evaluation-test.component";
 
 const routes: Routes = [
   { path: '', component: LandingPageComponent, title: 'GoCareer' },
@@ -36,7 +37,8 @@ const routes: Routes = [
       { path: 'talks', component: TalksWithSpecialistsComponent },
       { path: 'tests', component: VocationalTestsComponent },
       { path: 'careers', component: CareerOptionsComponent },
-      { path: 'questions', component: TestQuestionComponent}
+      { path: 'questions', component: TestQuestionComponent},
+      { path: 'evaluation', component: EvaluationTestComponent}
     ]
   },
   {
@@ -45,7 +47,8 @@ const routes: Routes = [
       { path: 'home', component: HomeSpecialistComponent },
       { path: 'talks', component: TalksWithStudentsComponent },
       { path: 'tests', component: QualifyTestsComponent },
-      { path: 'users-specialist', component: SeeAllStudentsComponent }
+      { path: 'users-specialist', component: SeeAllStudentsComponent },
+      { path: 'evaluation', component: EvaluationTestComponent}
     ]
   },
   { path: '**', component: NotFoundComponent, title: 'Not Found' }
