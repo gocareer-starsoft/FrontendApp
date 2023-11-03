@@ -39,8 +39,7 @@ h1 {
 }
 
 mat-card {
-  margin-top: 0;
-  margin-bottom: 44px;
+  margin-block: 40px;
   width: 949px;
   height: 280px;
   border-radius: 25px;
