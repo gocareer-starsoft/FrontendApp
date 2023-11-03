@@ -44,7 +44,7 @@ import { QualifyTestsComponent } from './specialist/pages/qualify-tests/qualify-
 import { QuestionTestComponent } from './student/components/question-test/question-test.component';
 import { TestQuestionComponent } from './student/pages/test-question/test-question.component';
 import { TestEvaluationComponent } from './specialist/components/test-evaluation/test-evaluation.component';
-import { QualifyTestComponent } from './specialist/pages/qualify-test/qualify-test.component';
+import { EvaluationTestComponent } from './specialist/pages/evaluation-test/evaluation-test.component';
 
 @NgModule({
   declarations: [
@@ -80,7 +80,7 @@ import { QualifyTestComponent } from './specialist/pages/qualify-test/qualify-te
     QuestionTestComponent,
     TestQuestionComponent,
     TestEvaluationComponent,
-    QualifyTestComponent
+    EvaluationTestComponent,
 
   ],
   imports: [
