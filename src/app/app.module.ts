@@ -43,6 +43,8 @@ import { TalksWithStudentsComponent } from './specialist/pages/talks-with-studen
 import { QualifyTestsComponent } from './specialist/pages/qualify-tests/qualify-tests.component';
 import { QuestionTestComponent } from './student/components/question-test/question-test.component';
 import { TestQuestionComponent } from './student/pages/test-question/test-question.component';
+import { TestEvaluationComponent } from './specialist/components/test-evaluation/test-evaluation.component';
+import { QualifyTestComponent } from './specialist/pages/qualify-test/qualify-test.component';
 
 @NgModule({
   declarations: [
@@ -76,7 +78,9 @@ import { TestQuestionComponent } from './student/pages/test-question/test-questi
     TalksWithStudentsComponent,
     QualifyTestsComponent,
     QuestionTestComponent,
-    TestQuestionComponent
+    TestQuestionComponent,
+    TestEvaluationComponent,
+    QualifyTestComponent
 
   ],
   imports: [

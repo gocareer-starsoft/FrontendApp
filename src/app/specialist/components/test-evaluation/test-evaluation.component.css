@@ -1,0 +1,81 @@
+.card-container {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  background-color: #EDEDED;
+}
+.mat-card-1 {
+  margin: 0 38px; /* Ajusta el margen izquierdo y derecho */
+  width: 475px;
+  height: 185px;
+  border-radius: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.mat-card-1 mat-card-header h1 {
+  font-size: 30px; /* Tamaño de letra de 30px */
+  font-family: 'Roboto Thin', sans-serif; /* Tipo de letra Roboto Thin */
+  text-align: center; /* Alineación al centro */
+  margin: 0; /* Elimina el margen predeterminado */
+}
+.custom-button {
+  background: linear-gradient(0deg, rgba(19, 94, 136, 0.8), rgba(19, 94, 136, 0.8)), linear-gradient(0deg, #EDEDED, #EDEDED);
+  color: white;
+  width: 200px; /* Ancho del botón */
+  height: 50px; /* Altura del botón */
+  font-size: 16px; /* Tamaño de fuente */
+  border-radius: 25px; /* Radio de borde */
+  margin: 10px; /* Margen exterior */
+}
+
+@media screen and (max-width: 600px) {
+  .custom-button {
+    width: 100%; /* Ancho completo en pantallas pequeñas */
+  }
+}
+.mat-card-2 {
+  margin: 0 38px; /* Ajusta el margen izquierdo y derecho */
+  width: 635px;
+  height: 640px;
+  border-radius: 35px;
+  line-height: 70px;
+}
+.mat-card-2 mat-card-header {
+  font-size: 30px; /* Tamaño de letra de 30px */
+  font-family: 'Roboto Thin', sans-serif; /* Tipo de letra Roboto */
+  text-align: center; /* Alineación al centro */
+  font-weight: bold;
+  margin: 0 auto; /* Centrar horizontalmente */
+}
+mat-card-content {
+  font-family: 'Roboto Thin', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+}
+.mat-card-2 mat-card-footer {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  font-family: 'Roboto Thin', sans-serif; /* Tipo de letra Roboto */
+  font-size: 30px; /* Tamaño de letra de 30px */
+  font-weight: bold;
+}
+.custom-mat-input {
+  width: 160px;
+  height: 40px;
+  top: 740px;
+  left: 1142px;
+  border-radius: 35px;
+  background: #EDEDED; /* Color de fondo sólido */
+  border: none; /* Elimina el borde predeterminado */
+  padding: 10px; /* Ajusta el relleno según sea necesario */
+  color: black; /* Color del texto */
+  font-size: 30px; /* Tamaño de letra */
+}
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra horizontalmente */
+  margin-bottom: 10px; /* Ajusta el margen según sea necesario */
+}
