@@ -7,8 +7,8 @@
       "email": "student@example.com",
       "password": "password1",
       "phone": "123456789",
-      "avatarUrl": "assets/img/user1.jpg",
-      "bio": "Bio1",
+      "avatarUrl": "assets/img/home-test.jpg",
+      "bio": "Add your bio here",
       "specialist": false
     },
     {
@@ -19,7 +19,7 @@
       "password": "password2",
       "phone": "987654321",
       "avatarUrl": "assets/img/user2.jpg",
-      "bio": "Bio2",
+      "bio": "Add your bio here",
       "specialist": true
     },
     {
@@ -30,7 +30,7 @@
       "password": "password3",
       "phone": "555555555",
       "avatarUrl": "assets/img/user3.jpg",
-      "bio": "Bio3",
+      "bio": "Add your bio here",
       "specialist": false
     }
   ],

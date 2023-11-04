@@ -26,15 +26,12 @@ export class AuthService {
     if (this.isUser) {
       this.userType = this.isUser.specialist ? 'specialist' : 'student';
       this.isAuthenticated = true;
+      this.usersService.setAuthenticatedUser(this.isUser);
     }
   }
 
   isLoggedIn(): boolean {
     return this.isAuthenticated;
-  }
-
-  getUser(): User {
-    return <User>this.isUser;
   }
 
   getUserType(): 'student' | 'specialist' {
