@@ -10,6 +10,7 @@ export class AuthService {
   users: Array<User> = [];
   private isAuthenticated: boolean = false;
   private userType: 'student' | 'specialist' = 'student';
+  private isUser: User | undefined = new User();
 
   constructor(private http: HttpClient, private usersService: UsersService) {
     this.usersService.getAll().subscribe((response: any) => {
@@ -19,17 +20,21 @@ export class AuthService {
 
   login(email: string, password: string) {
 
-    const isUser = this.users.find((user) =>
+    this.isUser = this.users.find((user) =>
         user.email === email && user.password === password);
 
-    if (isUser) {
-      this.userType = isUser?.specialist ? 'specialist' : 'student';
+    if (this.isUser) {
+      this.userType = this.isUser.specialist ? 'specialist' : 'student';
       this.isAuthenticated = true;
     }
   }
 
   isLoggedIn(): boolean {
     return this.isAuthenticated;
+  }
+
+  getUser(): User {
+    return <User>this.isUser;
   }
 
   getUserType(): 'student' | 'specialist' {
