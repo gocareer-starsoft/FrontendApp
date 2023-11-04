@@ -1,0 +1,72 @@
+mat-card-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+mat-card-content {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+mat-card-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+mat-checkbox.example-margin {
+  margin: 5px 0;
+}
+
+h1 {
+  font-size: 30px;
+  font-family: "Roboto Thin", serif;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 54px;
+}
+
+.background-container {
+  background: #EDEDED;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  flex-direction: column; /* Cambia la dirección a columnas */
+}
+
+mat-card {
+  margin-block: 40px;
+  width: 949px;
+  height: 280px;
+  border-radius: 25px;
+}
+@media screen and (max-width: 600px) {
+  mat-card {
+    width: 80%; /* Cambiar el ancho del mat-card para pantallas pequeñas */
+    height: auto; /* Ajustar la altura automáticamente */
+  }
+}
+button {
+  background-color: #135E88CC;
+  color: white;
+  margin-inline: 150px;
+  padding: 10px 20px; /* Ajusta el valor de padding según sea necesario */
+  max-width: calc(100% - 300px);
+  flex-shrink: 1;
+}
+button:hover {
+  background-color: #135E88;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  button {
+    max-width: none; /* Removemos la limitación de ancho para pantallas pequeñas */
+  }
+}
