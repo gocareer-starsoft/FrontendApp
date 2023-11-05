@@ -1,0 +1,26 @@
+<div class="login view">
+  <div class="container-login" [ngClass]="{'hide': isHidden}">
+    <mat-card class="layout">
+      <mat-card-header>
+        <h1>Crea tu cuenta</h1>
+        <p>Por favor ingrese sus datos para continuar</p>
+      </mat-card-header>
+      <mat-card-content>
+        <app-input-of-name/>
+        <app-input-of-email/>
+        <app-input-of-password/>
+        <mat-radio-group class="user-type" [formControl]="floatLabelControl">
+          <mat-radio-button value="auto">Estudiante</mat-radio-button>
+          <mat-radio-button value="always">Especialista</mat-radio-button>
+        </mat-radio-group>
+        <button class="btn" (click)="onCreateAccountClick()">Crear cuenta</button>
+      </mat-card-content>
+      <mat-card-footer>
+        <p class="footer-text">
+          ¿Ya tienes una cuenta?
+          <a class="register-link" (click)="onLogin()">Inicia Sesión</a>
+        </p>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

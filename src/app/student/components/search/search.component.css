@@ -1,0 +1,10 @@
+.input-search {
+    width: max(30rem, 100%);
+    background-color: var(--font-color-bg-dark);
+    color: var(--font-color-bg-dark);
+    padding: .5rem 2rem;
+    border-radius: 20px;
+    &::placeholder {
+        color: var(--font-color-bg-light);
+    }
+}

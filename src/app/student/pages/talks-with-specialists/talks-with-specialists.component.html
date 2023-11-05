@@ -1,0 +1,28 @@
+<app-bar-of-navigation></app-bar-of-navigation>
+<section class="talks">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="content">
+      <div class="start">
+        <div class="header">
+          <button class="icon-home" mat-fab
+                  aria-label="Example icon button with a home icon">
+            <mat-icon>groups</mat-icon>
+          </button>
+          Talks
+        </div>
+        <app-card-of-talk
+          *ngFor="let card of cardData"
+          [imageUrl]="card.imageUrl"
+          [title]="card.title"
+          [date]="card.date">
+        </app-card-of-talk>
+        <mat-divider></mat-divider>
+      </div>
+      <div class="end">
+        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+      </div>
+    </div>
+  </div>
+</section>
+

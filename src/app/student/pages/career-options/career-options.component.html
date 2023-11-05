@@ -1,0 +1,17 @@
+<app-bar-of-navigation/>
+<mat-card *ngFor="let career of careers" class="careers">
+  <mat-card-title>Carrera Recomendada: {{career.title}}</mat-card-title>
+  <mat-card-content>
+    <h2>Aptitudes</h2>
+    <p>
+      {{career.description}}
+    </p>
+    <h2>Recomendado por: {{career.source}}</h2>
+  </mat-card-content>
+  <mat-card-footer>
+    <div class="interested">
+      <button mat-fab color="primary"><mat-icon>check</mat-icon></button>
+      <button mat-fab color="warn"><mat-icon>delete</mat-icon></button>
+    </div>
+  </mat-card-footer>
+</mat-card>

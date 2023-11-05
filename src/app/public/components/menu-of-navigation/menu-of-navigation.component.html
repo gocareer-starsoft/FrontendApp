@@ -1,0 +1,24 @@
+<button mat-icon-button class="icon-menu"
+        aria-label="Example icon-button with menu icon"
+        [matMenuTriggerFor]="menu">
+  <mat-icon>menu</mat-icon>
+</button>
+
+<mat-menu class="menu" #menu="matMenu">
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'home']">
+    <mat-icon>home</mat-icon>Home
+  </button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'talks']">
+    <mat-icon>groups</mat-icon>Talk with {{userType === 'st' ? 'students' : 'specialists'}}
+  </button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'tests']">
+    <mat-icon>edit_document</mat-icon>Vocational tests
+  </button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'questions']">
+    <mat-icon>dvr</mat-icon>Do test vocational
+  </button>
+  <button class="bg-light" mat-menu-item [routerLink]="[userType, 'evaluation']">
+    <mat-icon>check_circle</mat-icon>Qualify Test
+  </button>
+
+</mat-menu>

@@ -1,0 +1,35 @@
+.careers{
+  min-width: min-content;
+  max-width: 22rem;
+  padding: 2.5rem;
+  background-color: white;
+  align-items: center;
+  border-radius: 35px;
+}
+.interested{
+  display: flex;
+  gap: 1.75rem;
+  padding: 1.25rem;
+}
+.interested button{
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 100%;
+}
+mat-card-title{
+  font-size: 2.5rem;
+  font-family: Roboto;
+  align-items: center;
+}
+mat-card-content h2{
+  font-size: 2.188rem;
+  font-family: Roboto;
+  font-weight: normal;
+  align-content: center;
+}
+mat-card-content p{
+  font-size: 2.188rem;
+  font-family: Roboto;
+  font-weight: lighter;
+  align-content: center;
+}

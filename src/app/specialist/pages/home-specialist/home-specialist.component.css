@@ -1,0 +1,30 @@
+.home .container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.2em;
+}
+
+.home .content {
+  background-color: var(--bg-div-color);
+  flex-grow: 9999;
+  display: flex;
+  gap: 1rem;
+  height: max-content;
+}
+.content .start {
+  min-width: min(35rem, 100%);
+  max-width: 40rem;
+}
+.content .end {
+  width: auto;
+}
+
+button.icon-home {
+  background-color: var(--primary-color);
+  cursor: auto;
+}
+.img-section {
+  width: 100%;
+  height: 100%;
+}
