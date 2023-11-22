@@ -8,8 +8,17 @@ import {User} from "../model/user.entity";
 })
 export class UsersService extends BaseService<User> {
 
+  private isUser: User | undefined = new User();
+
   constructor(http: HttpClient) {
     super(http);
     this.resourceEndpoint='/users'
+  }
+
+  setAuthenticatedUser(user: User) {
+    this.isUser = user;
+  }
+  getAuthenticatedUser(): User {
+    return <User>this.isUser;
   }
 }

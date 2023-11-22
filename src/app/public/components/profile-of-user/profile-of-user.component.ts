@@ -1,16 +1,21 @@
-import { Component, Input } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {User} from "../../model/user.entity";
+import {UsersService} from "../../services/users.service";
 
 @Component({
   selector: 'app-profile-of-user',
   templateUrl: './profile-of-user.component.html',
   styleUrls: ['./profile-of-user.component.css']
 })
-export class ProfileOfUserComponent {
+export class ProfileOfUserComponent implements OnInit {
   user: User = new User();
-
   userData = true;
   editMode = false;
+
+  constructor(private usersServices: UsersService) { }
+  ngOnInit(): void {
+    this.user = this.usersServices.getAuthenticatedUser();
+  }
   editData() {
     this.editMode = true;
     this.userData = false;

@@ -9,13 +9,13 @@ export class User {
   bio: string;
   specialist: boolean;
   constructor() {
-    this.id = 1;
-    this.name = "Jack";
-    this.lastname = "Arana";
-    this.email = "example@gmail.com";
+    this.id = 0;
+    this.name = "jk";
+    this.lastname = "";
+    this.email = "";
     this.password = "";
     this.phone = "";
-    this.avatarUrl = "assets/img/home-test.jpg";
+    this.avatarUrl = "";
     this.bio = "Add your bio here";
     this.specialist = false;
   }
