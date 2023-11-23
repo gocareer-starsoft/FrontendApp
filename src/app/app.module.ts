@@ -8,43 +8,37 @@ import { AppRoutingModule } from './app-routing.module';
 import { MaterialModule } from "./shared/material.module";
 import { AppComponent } from './app.component';
 
-import { UsersService } from './public/services/users.service';
-import { CareersService } from "./student/services/careers.service";
+import { UsersService } from './iam/services/users.service';
+import { CareersService } from "./assessment/services/careers.service";
 
 import { LandingHeaderComponent } from './public/components/landing-header/landing-header.component';
 import { LandingFooterComponent } from './public/components/landing-footer/landing-footer.component';
 import { LandingPageComponent } from './public/pages/landing-page/landing-page.component';
 import { ProfileOfUserComponent } from './public/components/profile-of-user/profile-of-user.component';
 import { NotFoundComponent } from './public/pages/not-found/not-found.component';
-import { LoginComponent } from './public/pages/login/login.component';
-import { CardOfHomeComponent } from './public/components/card-of-home/card-of-home.component';
-import { SearchComponent } from './student/components/search/search.component';
-import { SeeAllStudentsComponent } from './specialist/pages/see-all-students/see-all-students.component';
-import { CardOfUserComponent } from './specialist/components/card-of-user/card-of-user.component';
-import { CardOfSpecialistComponent } from './specialist/components/card-of-specialist/card-of-specialist.component';
+import { LoginComponent } from './iam/pages/login/login.component';
+import { SearchComponent } from './public/components/search/search.component';
 import { InputOfEmailComponent } from './public/components/input-of-email/input-of-email.component';
 import { InputOfPasswordComponent } from './public/components/input-of-password/input-of-password.component';
-import { SignupComponent } from './public/pages/signup/signup.component';
+import { SignupComponent } from './iam/pages/signup/signup.component';
 import { InputOfNameComponent } from './public/components/input-of-name/input-of-name.component';
-import { ForgotPasswordComponent } from './public/pages/forgot-password/forgot-password.component';
-import { HomeStudentComponent } from './student/pages/home-student/home-student.component';
+import { ForgotPasswordComponent } from './iam/pages/forgot-password/forgot-password.component';
+import { StudentHomeComponent } from './public/pages/student-home/student-home.component';
 import { MenuOfSettingComponent } from './public/components/menu-of-setting/menu-of-setting.component';
 import { MenuOfNavigationComponent } from './public/components/menu-of-navigation/menu-of-navigation.component';
-import { HomeSpecialistComponent } from './specialist/pages/home-specialist/home-specialist.component';
+import { SpecialistPanelComponent } from './public/pages/specialist-panel/specialist-panel.component';
 import { BarOfNavigationComponent } from './public/components/bar-of-navigation/bar-of-navigation.component';
 
-import { CareerOptionsComponent } from './student/pages/career-options/career-options.component';
+import { ResultsComponent } from './assessment/pages/results/results.component';
 
-import { CardOfTalkComponent } from './public/components/card-of-talk/card-of-talk.component';
-import { CardOfTestComponent } from './public/components/card-of-test/card-of-test.component';
-import { TalksWithSpecialistsComponent } from './student/pages/talks-with-specialists/talks-with-specialists.component';
-import { VocationalTestsComponent } from './student/pages/vocational-tests/vocational-tests.component';
-import { TalksWithStudentsComponent } from './specialist/pages/talks-with-students/talks-with-students.component';
-import { QualifyTestsComponent } from './specialist/pages/qualify-tests/qualify-tests.component';
-import { QuestionTestComponent } from './student/components/question-test/question-test.component';
-import { TestQuestionComponent } from './student/pages/test-question/test-question.component';
-import { TestEvaluationComponent } from './specialist/components/test-evaluation/test-evaluation.component';
-import { EvaluationTestComponent } from './specialist/pages/evaluation-test/evaluation-test.component';
+import { VocationalEventsComponent } from './orientation/pages/vocational-events/vocational-events.component';
+import { VocationalTestsComponent } from './assessment/pages/vocational-tests/vocational-tests.component';
+import { QuestionsComponent } from './assessment/pages/questions/questions.component';
+import { TestEvaluationComponent } from './assessment/components/test-evaluation/test-evaluation.component';
+import { EvaluationTestComponent } from './public/pages/evaluation-test/evaluation-test.component';
+import { CardOfInfoComponent } from './public/components/card-of-info/card-of-info.component';
+import { CreateEvaluationComponent } from './assessment/pages/create-evaluation/create-evaluation.component';
+import { CreateEventComponent } from './orientation/pages/create-event/create-event.component';
 
 @NgModule({
   declarations: [
@@ -55,32 +49,26 @@ import { EvaluationTestComponent } from './specialist/pages/evaluation-test/eval
     ProfileOfUserComponent,
     NotFoundComponent,
     LoginComponent,
-    CardOfHomeComponent,
     SearchComponent,
-    SeeAllStudentsComponent,
-    CardOfUserComponent,
-    CardOfSpecialistComponent,
     InputOfEmailComponent,
     InputOfPasswordComponent,
     SignupComponent,
     InputOfNameComponent,
     ForgotPasswordComponent,
-    HomeStudentComponent,
+    StudentHomeComponent,
     MenuOfSettingComponent,
     MenuOfNavigationComponent,
-    HomeSpecialistComponent,
+    SpecialistPanelComponent,
     BarOfNavigationComponent,
-    CareerOptionsComponent,
-    CardOfTalkComponent,
-    CardOfTestComponent,
-    TalksWithSpecialistsComponent,
+    ResultsComponent,
+    VocationalEventsComponent,
     VocationalTestsComponent,
-    TalksWithStudentsComponent,
-    QualifyTestsComponent,
-    QuestionTestComponent,
-    TestQuestionComponent,
+    QuestionsComponent,
     TestEvaluationComponent,
     EvaluationTestComponent,
+    CardOfInfoComponent,
+    CreateEvaluationComponent,
+    CreateEventComponent,
 
   ],
   imports: [

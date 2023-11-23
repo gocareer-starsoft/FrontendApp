@@ -1,0 +1,30 @@
+<section class="results">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="section column-section">
+      <div class="header">
+        <button class="icon" mat-fab [routerLink]="['/st/home']"
+                aria-label="Example icon button with a home icon">
+          <mat-icon>arrow_back</mat-icon>
+        </button>
+        Questions
+      </div>
+      <div class="scrollable">
+        <mat-card *ngFor="let career of careers" class="careers">
+          <mat-card-title>Carrera Recomendada: {{ career.title }}</mat-card-title>
+          <mat-card-content>
+            <h2>Aptitudes</h2>
+            <p>{{ career.description }}</p>
+            <h2>Recomendado por: {{ career.source }}</h2>
+          </mat-card-content>
+          <mat-card-actions>
+            <button mat-mini-fab color="primary"><mat-icon>check</mat-icon></button>
+            <button mat-mini-fab color="warn"><mat-icon>delete</mat-icon></button>
+          </mat-card-actions>
+          <mat-divider></mat-divider>
+        </mat-card>
+      </div>
+      <mat-divider></mat-divider>
+    </div>
+  </div>
+</section>

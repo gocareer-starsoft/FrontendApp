@@ -1,0 +1,30 @@
+<section class="talks">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="section row-section">
+      <div class="start">
+        <div class="header">
+          <button class="icon button-hover-magic" mat-fab [routerLink]="['/st/home']"
+                  aria-label="Example icon button with a home icon">
+            <mat-icon>groups</mat-icon>
+          </button>
+          Vocational Events
+        </div>
+        <div class="scrollable">
+          <app-card-of-info
+            *ngFor="let card of cardData"
+            [imageUrl]="card.imageUrl"
+            [title]="card.title"
+            [subtitle]="card.subtitle"
+            [buttonText]="card.buttonText">
+          </app-card-of-info>
+        </div>
+        <mat-divider></mat-divider>
+      </div>
+      <div class="end">
+        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+      </div>
+    </div>
+  </div>
+</section>
+

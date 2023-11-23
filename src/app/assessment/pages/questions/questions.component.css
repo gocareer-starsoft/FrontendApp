@@ -1,0 +1,16 @@
+mat-card {
+  width: 90%;
+  height: min-content;
+  padding: 1rem 0;
+  box-shadow: none;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 600px) {
+  button {
+    max-width: none; /* Removemos la limitación de ancho para pantallas pequeñas */
+  }
+}
