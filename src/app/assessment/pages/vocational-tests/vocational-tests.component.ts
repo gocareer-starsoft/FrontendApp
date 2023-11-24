@@ -15,7 +15,7 @@ export class VocationalTestsComponent implements OnInit {
 
   private getAllEvaluations(){
     this.evaluationsService.getAll().subscribe((response: any) => {
-      this.evaluations = response
+      this.evaluations = response.data
     });
   }
 

@@ -14,12 +14,12 @@ import {CreateEvaluationComponent} from "./assessment/pages/create-evaluation/cr
 import {CreateEventComponent} from "./orientation/pages/create-event/create-event.component";
 
 const routes: Routes = [
-  { path: '', redirectTo: '/signin', pathMatch: 'full' },
+  { path: '', redirectTo: '/sign-in', pathMatch: 'full' },
   {
-    path: 'signin', component: SigninComponent, data: { title: 'SignIn' }
+    path: 'sign-in', component: SigninComponent, data: { title: 'SignIn' }
   },
   {
-    path: 'signup', component: SignupComponent, data: { title: 'SignUp' }
+    path: 'sign-up', component: SignupComponent, data: { title: 'SignUp' }
   },
   {
     path: 'forgot-password', component: ForgotPasswordComponent, data: { title: 'Forgot Password' }

@@ -1,12 +1,12 @@
 export class Evaluation {
   id: number;
-  title: string;
-  description: string;
-  numberOfQuestions: number;
+  Title: string;
+  Description: string;
+  numberQuestions: number;
   constructor() {
     this.id = 0;
-    this.title = "";
-    this.description = "";
-    this.numberOfQuestions = 0;
+    this.Title = "";
+    this.Description = "";
+    this.numberQuestions = 0;
   }
 }

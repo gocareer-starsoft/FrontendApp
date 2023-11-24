@@ -10,6 +10,6 @@ export class EvaluationsService extends BaseService<Evaluation>{
 
   constructor(http: HttpClient) {
     super(http);
-    this.resourceEndpoint='/evaluations'
+    this.resourceEndpoint='/evaluations';
   }
 }
