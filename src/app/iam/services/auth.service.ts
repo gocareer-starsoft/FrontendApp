@@ -1,49 +1,20 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import {UsersService} from "./users.service";
-import {User} from "../model/user.entity";
+import {Observable} from "rxjs";
+import {environment} from "../../../environments/environment.development";
 
 @Injectable({
   providedIn: 'root'
 })
 export class AuthService {
-  users: Array<User> = [];
-  private isAuthenticated: boolean = false;
-  private userType: 'student' | 'specialist' = 'student';
-  private isUser: User | undefined = new User();
+  baseUrl: string=`${environment.serverBasePath}`;
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient, private usersService: UsersService) {
-    this.usersService.getAll().subscribe(
-      (response: any) => {
-        this.users = response;
-      },
-      (error: any) => {
-        console.error('Error fetching users:', error);
-      }
-    );
-
-  }
-  /*
-  login(email: string, password: string) {
-
-    this.isUser = this.users.find((user) =>
-        user.email === email && user.password === password);
-
-    if (this.isUser) {
-      this.userType = this.isUser.specialist ? 'specialist' : 'student';
-      console.log(this.userType);
-      this.isAuthenticated = true;
-      this.usersService.setAuthenticatedUser(this.isUser);
-    }
+  signIn(credentials: { username: string; password: string }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/authentication/sign-in`, credentials);
   }
 
-  isLoggedIn(): boolean {
-    return this.isAuthenticated;
+  signUp(userData: { username: string; password: string; roles: string[] }): Observable<any> {
+    return this.http.post(`${this.baseUrl}/authentication/sign-in`, userData);
   }
-
-  getUserType(): string {
-    console.log(this.userType);
-    return this.userType;
-  }
-  */
 }

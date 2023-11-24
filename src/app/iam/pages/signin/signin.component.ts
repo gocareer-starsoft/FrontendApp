@@ -18,17 +18,16 @@ export class SigninComponent {
 
     constructor(private router: Router, private authService: AuthService) { }
 
-    onLogin() {
-      /*
-        const email = this.emailInput.email;
-        const password = this.passwordInput.password;
-        this.authService.login(email, password);
-        if (this.authService.isLoggedIn()) {
-            this.router.navigate([
-              this.authService.getUserType() === 'student' ? `/home` : `/dashboard`
-            ]);
-        }
-       */
+    signIn() {
+      const signInCredentials = {
+        username: 'upc',
+        password: '3892',
+      };
+
+      this.authService.signIn(signInCredentials).subscribe((response) => {
+        console.log('Usuario autenticado:', response);
+        localStorage.setItem('token', response.token);
+      });
     }
 
     onSignup() {

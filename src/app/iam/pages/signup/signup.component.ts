@@ -2,6 +2,7 @@ import {Component} from '@angular/core';
 import {FormControl} from "@angular/forms";
 import {FloatLabelType} from "@angular/material/form-field";
 import {Router} from "@angular/router";
+import {AuthService} from "../../services/auth.service";
 @Component({
   selector: 'app-signup',
   templateUrl: './signup.component.html',
@@ -10,9 +11,21 @@ import {Router} from "@angular/router";
 export class SignupComponent {
   isHidden: boolean = false;
   floatLabelControl = new FormControl('auto' as FloatLabelType);
-  constructor(private router: Router) { }
+  constructor(private router: Router, private authService: AuthService) { }
 
-  onCreateAccountClick() {
+  signUp() {
+    const signUpData = {
+      username: 'nuevoUsuario',
+      password: 'nuevaContraseña',
+      roles: ['rol1', 'rol2'],
+    };
+
+    this.authService.signUp(signUpData).subscribe((response) => {
+      console.log('Usuario registrado con éxito:', response);
+    });
+  }
+
+  redirect() {
     const userType = this.floatLabelControl.value;
 
     if (userType === 'auto') {
@@ -21,7 +34,7 @@ export class SignupComponent {
       this.router.navigate(['/dashboard']);
     }
   }
-  onLogin() {
+  onSignIn() {
     this.isHidden = true;
     setTimeout(() => {
       this.router.navigate(['/signin']);

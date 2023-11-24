@@ -13,12 +13,12 @@
           <mat-radio-button value="auto">Estudiante</mat-radio-button>
           <mat-radio-button value="always">Especialista</mat-radio-button>
         </mat-radio-group>
-        <button class="btn" (click)="onCreateAccountClick()">Crear cuenta</button>
+        <button class="btn" (click)="signUp()" (click)="redirect()">Crear cuenta</button>
       </mat-card-content>
       <mat-card-footer>
         <p class="footer-text">
           ¿Ya tienes una cuenta?
-          <a class="register-link" (click)="onLogin()">Inicia Sesión</a>
+          <a class="register-link" (click)="onSignIn()">Inicia Sesión</a>
         </p>
       </mat-card-footer>
     </mat-card>
