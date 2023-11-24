@@ -9,7 +9,7 @@
                   aria-label="Example icon button with a home icon">
             <mat-icon>edit_document</mat-icon>
           </button>
-          Vocational Tests
+          {{ 'title.vocationalTests' | translate }}
         </div>
         <div class="content scrollable">
           <div class="evaluations-container" *ngFor="let evaluation of evaluations">
@@ -20,13 +20,13 @@
               <mat-card class="info-container">
                 <mat-card-header>
                   <mat-card-title>{{ evaluation.Title }}</mat-card-title>
-                  <mat-card-subtitle>Preguntas: {{ evaluation.numberQuestions }}</mat-card-subtitle>
+                  <mat-card-subtitle>{{ 'subtitle.questions' | translate }} {{ evaluation.numberQuestions }}</mat-card-subtitle>
                 </mat-card-header>
 
                 <mat-card-actions>
                   <button mat-button
                           routerLink="/st/vocational-tests/assessment/questions">
-                    Comenzar Ahora</button>
+                    {{ 'button.startNow' | translate }}</button>
                 </mat-card-actions>
               </mat-card>
             </div>

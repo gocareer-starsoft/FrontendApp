@@ -1,0 +1,29 @@
+{
+    "title": {
+        "signIn": "Bienvenido",
+        "signUp": "Crea tu cuenta",
+        "home": "Inicio",
+        "vocationalTests": "Pruebas Vocacionales",
+        "vocationalEvents": "Eventos Vocacionales",
+        "dashboard": "Tablero",
+        "evaluations": "Evaluaciones",
+        "events": "Eventos"
+    },
+    "subtitle": {
+        "signIn": "Inicia sesión para comenzar tu sesión",
+        "signUp": "Regístrate para comenzar tu sesión",
+        "questions": "Preguntas: ",
+        "date": "Fecha"
+    },
+    "button": {
+        "logIn": "Iniciar Sesión",
+        "startNow": "Comenzar Ahora",
+        "register": "Registrarse",
+        "go": "Ir",
+        "see": "Ver"
+    },
+    "option":{
+        "student": "Estudiante",
+        "specialist": "Especialista"
+    }
+}

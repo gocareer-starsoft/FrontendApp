@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from "@angular/common/http";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
@@ -35,7 +35,12 @@ import { TestEvaluationComponent } from './assessment/components/test-evaluation
 import { CardOfInfoComponent } from './shared/components/card-of-info/card-of-info.component';
 import { CreateEvaluationComponent } from './assessment/pages/create-evaluation/create-evaluation.component';
 import { CreateEventComponent } from './orientation/pages/create-event/create-event.component';
+import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import {TranslateLoader, TranslateModule} from "@ngx-translate/core";
 
+export function createTranslateLoader(http: HttpClient) {
+  return new TranslateHttpLoader(http, './assets/i18n/', '.json');
+}
 @NgModule({
   declarations: [
     AppComponent,
@@ -61,7 +66,6 @@ import { CreateEventComponent } from './orientation/pages/create-event/create-ev
     CardOfInfoComponent,
     CreateEvaluationComponent,
     CreateEventComponent,
-
   ],
   imports: [
     BrowserModule,
@@ -70,7 +74,12 @@ import { CreateEventComponent } from './orientation/pages/create-event/create-ev
     HttpClientModule,
     MaterialModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    TranslateModule.forRoot({
+      defaultLanguage: 'en', loader: {
+        provide: TranslateLoader, useFactory: (createTranslateLoader), deps: [HttpClient]
+      }
+    }),
   ],
   providers: [UsersService, ResultsService],
   bootstrap: [AppComponent]

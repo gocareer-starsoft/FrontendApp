@@ -2,18 +2,18 @@
   <div class="container-login" [ngClass]="{'hide': isHidden}">
     <mat-card>
       <mat-card-header>
-        <h1>Bienvenidos</h1>
-        <p>Por favor inicie sesión para continuar</p>
+        <h1>{{ 'title.signIn' | translate }}</h1>
+        <p>{{ 'subtitle.signIn' | translate }}</p>
       </mat-card-header>
       <mat-card-content>
         <app-input-of-email></app-input-of-email>
         <app-input-of-password></app-input-of-password>
-        <a class="checkpoint-link" routerLink="/forgot-password">¿Olvidó su contraseña?</a>
-        <button class="btn" (click)="signIn()">Ingresa ahora</button>
+        <a class="checkpoint-link" routerLink="/forgot-password">Forgot your password?</a>
+        <button class="btn" (click)="signIn()">Enter now</button>
       </mat-card-content>
       <mat-card-footer>
-        <p class="footer-text">¿Aun no tienes una cuenta?
-          <a class="register-link" (click)="onSignup()">Únete!!</a>
+        <p class="footer-text">Do not you have an account yet?
+          <a class="register-link" (click)="onSignup()">Join up!!</a>
         </p>
       </mat-card-footer>
     </mat-card>

@@ -15,11 +15,11 @@ export class VocationalTestsComponent implements OnInit {
 
   private getAllEvaluations(){
     this.evaluationsService.getAll().subscribe((response: any) => {
-      this.evaluations = response.data
+      this.evaluations = response.data;
     });
   }
 
   ngOnInit(): void {
-    this.getAllEvaluations()
+    this.getAllEvaluations();
   }
 }

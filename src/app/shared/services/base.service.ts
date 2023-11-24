@@ -36,6 +36,12 @@ export class BaseService<T> {
       .pipe(retry(2),catchError(this.handleError));
   }
 
+  register(item: any){
+    return this.http.post<T>(this.resourcePath(),
+        JSON.stringify(item))
+        .pipe(retry(2),catchError(this.handleError));
+  }
+
   delete(id: any){
     return this.http.delete(`${this.resourcePath()}/${id}`,this.httpOptions)
       .pipe(retry(2),catchError(this.handleError));

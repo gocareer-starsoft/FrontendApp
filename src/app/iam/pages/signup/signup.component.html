@@ -2,23 +2,23 @@
   <div class="container-login" [ngClass]="{'hide': isHidden}">
     <mat-card class="layout">
       <mat-card-header>
-        <h1>Crea tu cuenta</h1>
-        <p>Por favor ingrese sus datos para continuar</p>
+        <h1>{{ 'title.signUp' | translate }}</h1>
+        <p> {{ 'subtitle.signUp' | translate }}</p>
       </mat-card-header>
       <mat-card-content>
         <app-input-of-name/>
         <app-input-of-email/>
         <app-input-of-password/>
         <mat-radio-group class="user-type" [formControl]="floatLabelControl">
-          <mat-radio-button value="auto">Estudiante</mat-radio-button>
-          <mat-radio-button value="always">Especialista</mat-radio-button>
+          <mat-radio-button value="auto">{{ 'option.student' | translate }}</mat-radio-button>
+          <mat-radio-button value="always">{{ 'option.specialist' | translate }}</mat-radio-button>
         </mat-radio-group>
-        <button class="btn" (click)="signUp()">Crear cuenta</button>
+        <button class="btn" (click)="signUp()">Create Account</button>
       </mat-card-content>
       <mat-card-footer>
         <p class="footer-text">
           ¿Ya tienes una cuenta?
-          <a class="register-link" (click)="onSignIn()">Inicia Sesión</a>
+          <a class="register-link" (click)="onSignIn()">{{ 'button.logIn' | translate }}</a>
         </p>
       </mat-card-footer>
     </mat-card>
