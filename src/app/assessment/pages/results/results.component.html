@@ -4,11 +4,11 @@
     <app-profile-of-user/>
     <div class="section column-section">
       <div class="header">
-        <button class="icon" mat-fab [routerLink]="['/st/home']"
+        <button class="icon" mat-fab routerLink="/home"
                 aria-label="Example icon button with a home icon">
           <mat-icon>arrow_back</mat-icon>
         </button>
-        Questions
+        Results
       </div>
       <div class="scrollable">
         <mat-card *ngFor="let career of careers" class="careers">

@@ -1,8 +1,8 @@
 import {Component, ViewChild} from '@angular/core';
 import { Router } from "@angular/router";
 import { User } from "../../model/user.entity";
-import {InputOfPasswordComponent} from "../../../public/components/input-of-password/input-of-password.component";
-import {InputOfEmailComponent} from "../../../public/components/input-of-email/input-of-email.component";
+import {InputOfPasswordComponent} from "../../components/input-of-password/input-of-password.component";
+import {InputOfEmailComponent} from "../../components/input-of-email/input-of-email.component";
 import {AuthService} from "../../services/auth.service";
 
 @Component({

@@ -16,9 +16,9 @@ export class SignupComponent {
     const userType = this.floatLabelControl.value;
 
     if (userType === 'auto') {
-      this.router.navigate(['/st/home']);
+      this.router.navigate(['/home']);
     } else if (userType === 'always') {
-      this.router.navigate(['/sp/home']);
+      this.router.navigate(['/dashboard']);
     }
   }
   onLogin() {

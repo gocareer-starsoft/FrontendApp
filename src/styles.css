@@ -183,11 +183,7 @@ button.btn {
 button.icon {
   background-color: var(--primary-color);
   cursor: auto;
-  &:hover {
-    background-color: #212121;
-  }
 }
-
 
 @media (max-width: 1800px) {
   .container {
