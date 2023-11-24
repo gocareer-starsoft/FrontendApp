@@ -9,6 +9,6 @@ import {Router} from "@angular/router";
 export class ForgotPasswordComponent {
   constructor(private router: Router) {}
   onLogin() {
-    this.router.navigate(['/login']);
+    this.router.navigate(['/signin']);
   }
 }

@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {User} from "../../../iam/model/user.entity";
 import {UsersService} from "../../../iam/services/users.service";
+import {Profile} from "../../../profiles/model/profile";
+import {ProfilesService} from "../../../profiles/services/profiles.service";
 
 @Component({
   selector: 'app-profile-of-user',
@@ -8,13 +9,13 @@ import {UsersService} from "../../../iam/services/users.service";
   styleUrls: ['./profile-of-user.component.css']
 })
 export class ProfileOfUserComponent implements OnInit {
-  user: User = new User();
+  profile: Profile = new Profile();
   userData = true;
   editMode = false;
 
-  constructor(private usersServices: UsersService) { }
+  constructor(private profilesService: ProfilesService) { }
   ngOnInit(): void {
-    this.user = this.usersServices.getAuthenticatedUser();
+    this.profile = this.profilesService.getAuthenticatedUser();
   }
   editData() {
     this.editMode = true;

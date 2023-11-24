@@ -1,6 +1,6 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Career} from "../../model/career.entity";
-import {CareersService} from "../../services/careers.service";
+import {Career} from "../../model/result";
+import {ResultsService} from "../../services/results.service";
 
 @Component({
   selector: 'app-results',
@@ -10,12 +10,11 @@ import {CareersService} from "../../services/careers.service";
 export class ResultsComponent implements OnInit{
   @Input() careers: Array<Career>=[]
 
-  constructor(private careerService:CareersService) {
-  }
+  constructor(private careerService:ResultsService) {}
 
   private getAllCareers(){
     this.careerService.getAll().subscribe((response: any) => {
-      this.careers=response
+      this.careers = response
     });
   }
 

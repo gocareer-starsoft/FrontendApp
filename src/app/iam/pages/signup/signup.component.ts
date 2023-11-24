@@ -24,7 +24,7 @@ export class SignupComponent {
   onLogin() {
     this.isHidden = true;
     setTimeout(() => {
-      this.router.navigate(['/login']);
+      this.router.navigate(['/signin']);
     }, 500);
   }
 }

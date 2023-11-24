@@ -1,3 +1,4 @@
+<app-navbar-of-student/>
 <section class="talks">
   <div class="container">
     <app-profile-of-user/>
@@ -11,13 +12,26 @@
           Vocational Events
         </div>
         <div class="scrollable">
-          <app-card-of-info
-            *ngFor="let card of cardData"
-            [imageUrl]="card.imageUrl"
-            [title]="card.title"
-            [subtitle]="card.subtitle"
-            [buttonText]="card.buttonText">
-          </app-card-of-info>
+          <div class="meetings-container" *ngFor="let meeting of meetings">
+            <div class="meeting">
+              <div class="image-container">
+                <img src="assets/img/home-test.jpg" alt="Photo of a Shiba Inu">
+              </div>
+              <mat-card class="info-container">
+                <mat-card-header>
+                  <mat-card-title>{{ meeting.title }}</mat-card-title>
+                  <mat-card-subtitle>Fecha: {{ meeting.date }}</mat-card-subtitle>
+                </mat-card-header>
+
+                <mat-card-actions>
+                  <button mat-button
+                          routerLink="/st/vocational-orientation/register">
+                    Inscribirme</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
         </div>
         <mat-divider></mat-divider>
       </div>

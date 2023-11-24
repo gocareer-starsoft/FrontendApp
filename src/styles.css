@@ -164,7 +164,11 @@ section {
   .header {
     padding-bottom: 1rem;
   }
+  & mat-card {
+    box-shadow: none;
+  }
 }
+
 .section .header {
   font-size: 2.5em;
   font-weight: bold;
@@ -218,8 +222,9 @@ button.icon {
 mat-card-header, mat-card-content, mat-card-actions,
 mat-card-footer, mat-list-item, mat-form-field {
   padding: 0 !important;
+  border: none;
+  box-shadow: none !important;
 }
-
 .row-section {
   display: flex;
   gap: 1rem;
@@ -263,4 +268,5 @@ mat-card-actions {
 .section .scrollable {
   overflow-y: auto;
   height: 100%;
+  padding-bottom: 3.5rem;
 }

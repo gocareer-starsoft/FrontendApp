@@ -2,39 +2,64 @@
   "users": [
     {
       "id": 1,
-      "name": "Jack",
-      "lastname": "Arana",
-      "email": "student@example.com",
-      "password": "password1",
-      "phone": "123456789",
-      "avatarUrl": "assets/img/home-test.jpg",
-      "bio": "Add your bio here",
-      "specialist": false
+      "username": "jack",
+      "roles": [
+        "ROLE_STUDENT"
+      ]
     },
     {
       "id": 2,
-      "name": "Alice",
-      "lastname": "Smith",
-      "email": "specialist@example.com",
-      "password": "password2",
-      "phone": "987654321",
-      "avatarUrl": "assets/img/user2.jpg",
-      "bio": "Add your bio here",
-      "specialist": true
+      "username": "alice",
+      "roles": [
+        "ROLE_SPECIALIST"
+      ]
     },
     {
       "id": 3,
-      "name": "Bob",
-      "lastname": "Johnson",
-      "email": "example3@gmail.com",
-      "password": "password3",
-      "phone": "555555555",
-      "avatarUrl": "assets/img/user3.jpg",
-      "bio": "Add your bio here",
-      "specialist": false
+      "username": "student2",
+      "roles": [
+        "ROLE_STUDENT"
+      ]
     }
   ],
-  "careers": [
+  "profiles": [
+    {
+      "id": 1,
+      "fullName": "Jack Arana",
+      "email": "student@example.com",
+      "description": "Add your bio here",
+      "isSpecialist": false
+    },
+    {
+      "id": 2,
+      "fullName": "Alice Smith",
+      "email": "specialist@example.com",
+      "description": "Add your bio here",
+      "isSpecialist": true
+    },
+    {
+      "id": 3,
+      "fullName": "John Doe",
+      "email": "student2@example.com",
+      "description": "Add your bio here",
+      "isSpecialist": false
+    }
+  ],
+  "students": [
+    {
+      "id": 1,
+      "name": "Jack",
+      "lastName": "Arana",
+      "email": "student@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "lastName": "Doe",
+      "email": "student2@example.com"
+    }
+  ],
+  "results": [
     {
       "id": 1,
       "title": "Contaduría",
@@ -58,6 +83,70 @@
       "title": "Ilustración digital",
       "description": "Se fomentan las habilidades creativas y se requiere aprender sobre herramientas de dibujo y edición digital",
       "source": "Toulouse Lautrec"
+    }
+  ],
+  "evaluations": [
+    {
+      "id": 1,
+      "title": "Test Vocacional sobre competencias digitales.",
+      "description": "Este test te ayudará a descubrir tus habilidades y competencias digitales. Te recomendamos que lo realices con calma y sin distracciones. Al finalizar, podrás ver los resultados y recomendaciones de carreras que se ajustan a tus intereses.",
+      "numberOfQuestions": 20
+    },
+    {
+      "id": 2,
+      "title": "Prueba de Orientación Vocacional en Tecnología.",
+      "description": "Este test te ayudará a descubrir tus habilidades y competencias digitales. Te recomendamos que lo realices con calma y sin distracciones. Al finalizar, podrás ver los resultados y recomendaciones de carreras que se ajustan a tus intereses.",
+      "numberOfQuestions": 10
+    },
+    {
+      "id": 3,
+      "title": "Descubre tus competencias digitales con nuestro test.",
+      "description": "Este test te ayudará a descubrir tus habilidades y competencias digitales. Te recomendamos que lo realices con calma y sin distracciones. Al finalizar, podrás ver los resultados y recomendaciones de carreras que se ajustan a tus intereses.",
+      "numberOfQuestions": 20
+    },
+    {
+      "id": 4,
+      "title": "Evalúa tus conocimientos digitales con nuestro cuestionario.",
+      "description": "Este test te ayudará a descubrir tus habilidades y competencias digitales. Te recomendamos que lo realices con calma y sin distracciones. Al finalizar, podrás ver los resultados y recomendaciones de carreras que se ajustan a tus intereses.",
+      "numberOfQuestions": 15
+    },
+    {
+      "id": 5,
+      "title": "Test de Competencias Digitales: Descubre tus fortalezas..",
+      "description": "Este test te ayudará a descubrir tus habilidades y competencias digitales. Te recomendamos que lo realices con calma y sin distracciones. Al finalizar, podrás ver los resultados y recomendaciones de carreras que se ajustan a tus intereses.",
+      "numberOfQuestions": 10
+    }
+  ],
+  "meetings": [
+    {
+      "id": 1,
+      "title": "Asiste a nuestra charla sobre competencias digitales.",
+      "description": "En esta charla aprenderás sobre las competencias digitales que se requieren para el mercado laboral actual.",
+      "date": "10/11/2023"
+    },
+    {
+      "id": 2,
+      "title": "Participa en nuestro taller de desarrollo web.",
+      "description": "En este taller aprenderás a desarrollar una página web desde cero.",
+      "date": "10/11/2023"
+    },
+    {
+      "id": 3,
+      "title": "Seminario sobre innovación en inteligencia artificial.",
+      "description": "En este seminario aprenderás sobre las últimas tendencias en inteligencia artificial.",
+      "date": "10/11/2023"
+    },
+    {
+      "id": 4,
+      "title": "Conéctate con profesionales en nuestro evento de networking.",
+      "description": "En este evento podrás conocer a profesionales de diversas áreas y ampliar tu red de contactos.",
+      "date": "10/11/2023"
+    },
+    {
+      "id": 5,
+      "title": "Enfrenta nuestro desafío de programación en equipo.",
+      "description": "En este desafío podrás poner a prueba tus habilidades de programación y trabajo en equipo.",
+      "date": "10/11/2023"
     }
   ]
 }
