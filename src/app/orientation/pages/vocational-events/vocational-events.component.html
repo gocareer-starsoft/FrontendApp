@@ -1,0 +1,44 @@
+<app-navbar-of-student/>
+<section class="talks">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="section row-section">
+      <div class="start">
+        <div class="header">
+          <button class="icon button-hover-magic" mat-fab routerLink="/home"
+                  aria-label="Example icon button with a home icon">
+            <mat-icon>groups</mat-icon>
+          </button>
+          {{ 'title.vocationalEvents' | translate }}
+        </div>
+        <div class="scrollable">
+          <div class="meetings-container" *ngFor="let meeting of meetings">
+            <div class="meeting">
+              <div class="image-container">
+                <img src="assets/img/home-test.jpg" alt="Photo of a Shiba Inu">
+              </div>
+              <mat-card class="info-container">
+                <mat-card-header>
+                  <mat-card-title>{{ meeting.title }}</mat-card-title>
+                  <mat-card-subtitle>{{ 'subtitle.date' | translate }}: {{ meeting.date }}</mat-card-subtitle>
+                </mat-card-header>
+
+                <mat-card-actions>
+                  <button mat-button
+                          routerLink="/st/vocational-orientation/register">
+                    {{ 'button.register' | translate }}</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+        <mat-divider></mat-divider>
+      </div>
+      <div class="end">
+        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+      </div>
+    </div>
+  </div>
+</section>
+

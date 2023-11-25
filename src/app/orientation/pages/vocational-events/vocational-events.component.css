@@ -1,0 +1,37 @@
+.meetings-container {
+  width: 100%;
+  height: min-content;
+  border-radius: 20px;
+}
+.meeting {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+.image-container {
+  min-width: 10rem;
+  max-width: 11rem;
+  height: auto;
+  & img {
+    border-radius: 10px;
+    height: 100%;
+  }
+}
+.info-container {
+  flex-grow: 9999;
+}
+mat-card-actions {
+  display: flex;
+  gap: 1rem;
+  & button {
+    background-color: var(--shadow-color);
+    color: var(--primary-color) !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .meetings-container {
+    flex-direction: column;
+  }
+}
+

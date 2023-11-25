@@ -12,7 +12,8 @@ export class BaseService<T> {
 
   httpOptions = {
     headers: new HttpHeaders({
-      'Content-Type':'application/json'
+      'Content-Type':'application/json',
+      'Authorization': 'Bearer ' + localStorage.getItem('token')
     })
   }
   constructor(private http: HttpClient) { }
@@ -33,6 +34,12 @@ export class BaseService<T> {
     return this.http.post<T>(this.resourcePath(),
       JSON.stringify(item),this.httpOptions)
       .pipe(retry(2),catchError(this.handleError));
+  }
+
+  register(item: any){
+    return this.http.post<T>(this.resourcePath(),
+        JSON.stringify(item))
+        .pipe(retry(2),catchError(this.handleError));
   }
 
   delete(id: any){

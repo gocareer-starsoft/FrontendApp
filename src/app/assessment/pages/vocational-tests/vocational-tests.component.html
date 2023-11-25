@@ -1,0 +1,43 @@
+<app-navbar-of-student/>
+<section class="tests">
+  <div class="container">
+    <app-profile-of-user/>
+    <div class="section row-section">
+      <div class="start">
+        <div class="header">
+          <button class="icon" mat-fab routerLink="/home"
+                  aria-label="Example icon button with a home icon">
+            <mat-icon>edit_document</mat-icon>
+          </button>
+          {{ 'title.vocationalTests' | translate }}
+        </div>
+        <div class="content scrollable">
+          <div class="evaluations-container" *ngFor="let evaluation of evaluations">
+            <div class="evaluation">
+              <div class="image-container">
+                <img src="assets/img/home-test.jpg" alt="Photo of a Shiba Inu">
+              </div>
+              <mat-card class="info-container">
+                <mat-card-header>
+                  <mat-card-title>{{ evaluation.Title }}</mat-card-title>
+                  <mat-card-subtitle>{{ 'subtitle.questions' | translate }} {{ evaluation.numberQuestions }}</mat-card-subtitle>
+                </mat-card-header>
+
+                <mat-card-actions>
+                  <button mat-button
+                          routerLink="/st/vocational-tests/assessment/questions">
+                    {{ 'button.startNow' | translate }}</button>
+                </mat-card-actions>
+              </mat-card>
+            </div>
+            <mat-divider></mat-divider>
+          </div>
+        </div>
+      </div>
+      <div class="end">
+        <img class="img-section" src="../../../../assets/img/section.png" alt="image of section">
+      </div>
+    </div>
+  </div>
+</section>
+

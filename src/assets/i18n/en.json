@@ -1,0 +1,29 @@
+{
+  "title": {
+    "signIn": "Welcome",
+    "signUp": "Creat your account",
+    "home": "Home",
+    "vocationalTests": "Vocational Tests",
+    "vocationalEvents": "Vocational Events",
+    "dashboard": "Dashboard",
+    "evaluations": "Evaluations",
+    "events": "Events"
+  },
+  "subtitle": {
+    "signIn": "Sign in to start your session",
+    "signUp": "Sign up to start your session",
+    "questions": "Questions: ",
+    "date": "Date"
+  },
+  "button": {
+    "logIn": "Log In",
+    "startNow": "Start Now",
+    "register": "Register",
+    "go": "Go",
+    "see": "See"
+  },
+  "option":{
+    "student": "Student",
+    "specialist": "Specialist"
+  }
+}

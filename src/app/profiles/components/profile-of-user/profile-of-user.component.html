@@ -1,0 +1,40 @@
+<mat-card class="profile">
+  <mat-card-header>
+    <img src="assets/img/home-test.jpg" alt="User Avatar">
+  </mat-card-header>
+
+  <mat-card-content>
+    <mat-card-title>{{ profile.fullName }}</mat-card-title>
+    <mat-card-subtitle>{{ profile.email }}</mat-card-subtitle>
+  </mat-card-content>
+
+  <mat-card-content *ngIf="userData">
+    {{ profile.description }}
+  </mat-card-content>
+
+  <mat-card-content class="edit" *ngIf="editMode">
+    <div class="name">
+      <mat-form-field class="example-full-width">
+        <mat-label>Full name</mat-label>
+        <input matInput [(ngModel)]="profile.fullName">
+      </mat-form-field>
+    </div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Email</mat-label>
+      <input matInput [(ngModel)]="profile.email">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Biografía</mat-label>
+      <textarea matInput [(ngModel)]="profile.description" placeholder="Escribir.."></textarea>
+    </mat-form-field>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <button class="btn" *ngIf="userData" mat-button
+            (click)="editData()">
+      <mat-icon>edit</mat-icon>Editar Perfil</button>
+    <button class="btn" *ngIf="editMode" mat-button
+            (click)="saveProfile()">
+      <mat-icon>save</mat-icon>Guardar</button>
+  </mat-card-actions>
+</mat-card>

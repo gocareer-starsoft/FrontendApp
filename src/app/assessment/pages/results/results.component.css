@@ -1,0 +1,10 @@
+mat-card {
+  padding-bottom: 1rem;
+}
+button.icon {
+  background-color: var(--primary-color);
+  cursor: auto;
+  &:hover {
+    background-color: #212121;
+  }
+}

@@ -1,0 +1,8 @@
+<div class="example-container">
+  <mat-form-field>
+    <mat-label>Enter your Username</mat-label>
+    <input matInput placeholder="player" required
+           [(ngModel)]="email" >
+    <mat-error *ngIf="!email">You must enter a value</mat-error>
+  </mat-form-field>
+</div>
