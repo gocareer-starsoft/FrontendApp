@@ -1,8 +1,6 @@
 @import '@angular/material/prebuilt-themes/indigo-pink.css';
 
-/* Definimos las Custom properties */
 :root {
-  /* Colores */
   --negro: #393939;
   --font-color-bg-light: black;
   --font-color-bg-dark: white;
@@ -12,49 +10,39 @@
   --bg-body-color: #EDEDED;
   --bg-div-color: white;
 
-  /* Tipografía */
   --tipo-principal: Roboto, "Helvetica Neue", sans-serif;
   --tipo-secundaria: Verdana;
 }
 
-/* (Opcional) Las adaptamos al modo oscuro */
 @media (prefers-color-scheme: dark) {
   :root {
-  //--negro: #ececec;
+  --negro: #ececec;
   }
 }
-/* (Opcional) Configuramos si un usuario ha activado el modo alto contraste. (WD) */
-/* (Opcional) Desactivamos los animations en el caso de que el usuario haya configurado el modo sin animation */
 @media (prefers-reduced-motion: reduce) {
   * {
     animation: none !important;
     transition: none !important;
   }
 }
-/* Reseteamos los margin y paddings de todas las etiquetas */
 *, *::before, *::after {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /*vertical-align: baseline;*/
 }
 
 *::before, *::after {
   display: block;
 }
 
-/* Evitamos problemas con las imagenes */
 img, picture, video, iframe, figure {
   max-width: 100%;
   width: 100%;
   display: block;
-  /* (Opcional) */
   object-fit: cover;
-  /* (Opcional) */
   object-position: center center;
 }
 
-/* Reseteamos los enlaces para funcionar como cajas... */
 a {
   display: block;
   text-decoration: none;
@@ -62,17 +50,14 @@ a {
   font-size: inherit;
 }
 
-/* ... excepto los que se encuentran en párrafos */
 p a {
   display: inline;
 }
 
-/* Quitamos los puntos de los <li> */
 li {
   list-style-type: none;
 }
 
-/* Desactivamos estilos por defecto de las principales etiquetas de texto */
 h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, u, em {
   font-size: inherit;
   font-weight: inherit;
@@ -81,49 +66,41 @@ h1, h2, h3, h4, h5, h6, p, span, a, strong, blockquote, i, u, em {
   color: inherit;
 }
 
-/* Evitamos problemas con los pseudoelementos de quotes */
 blockquote:before, blockquote:after, q:before, q:after {
   content: "";
 }
 
-/* (Opcional) Configuramos el texto que seleccionamos */
 ::selection {
   background-color: var(--negro);
 }
 
-/* Nivelamos problemas de tipografías y colocación de formularios */
 form, input, textarea, select, button, label {
   font-family: inherit;
   font-size: inherit;
   background-color: transparent;
   color: inherit;
   display: block;
-  /* (Opcional) */
   appearance: none;
   border: 0 !important;
 }
 
-/* Reseteamos las tablas */
 table, tr, td {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* Evitamos problemas con los SVG */
 svg {
   width: 100%;
   display: block;
   fill: currentColor;
 }
 
-/* (Opcional) Configuramos anclas suaves */
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
   font-size: 100%;
 }
 
-/* Configuramos la tipografía para toda la web */
 body {
   width: 100%;
   max-height: 100vh;

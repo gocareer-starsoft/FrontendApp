@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "dist",
+    "public": "dist/go-career202302",
     "ignore": [
       "firebase.json",
       "**/.*",
